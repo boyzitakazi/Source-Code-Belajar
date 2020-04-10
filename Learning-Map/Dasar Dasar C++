@@ -56,4 +56,23 @@
 
 - Data type Non-Primitive 
   - Array
-  - multidimensi array
+    - Multidimensi array
+    Wajib Dicoba:
+      - Looping Array
+      - Search Array (binary_search)
+      - Operasi Array
+      - Sorting Array (sort)
+  - String (kumpulan dari banyak character)
+    Wajib Dicoba:
+      - Operasi String
+      - String pada Array
+      - Subtitusi String (replace, insert, swap)
+      - Komparasi String
+      - Akses Substring (find, substr)
+      - getline console (getline(cin, variabel))
+  - Struct (tipe data yang dimana 1 data memiliki banyak komponen/element-element)
+    - Nesting Struct
+  - Union  (tipe data yang dimana 1 data memiliki banyak komponen/element-element, dan saling berhubungan jika
+            salah satu data diubah maka yang lainnya akan berubah)
+            
+      
