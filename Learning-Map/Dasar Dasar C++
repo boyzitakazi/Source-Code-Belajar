@@ -54,7 +54,7 @@
   1. Pointer ( pemberi alamat pada suatu variabel )
   2. Reference ( mengacu pada suatu variabel sehingga nilai dan alamatnya sama )
 
-- Data type Non-Primitive 
+- Memahami dan dapat menjelaskan Data type Non-Primitive 
   - Array
     - Multidimensi array
     Wajib Dicoba:
