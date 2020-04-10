@@ -1,0 +1,59 @@
+- memahami printing(output) dan masukan(input)
+- memahami variable, inisialisasi dan deklarasi
+- memahami tipe data dan bisa menghitung nilai tipe data beserta kegunaanya
+  - bilangan bulat
+    1. short
+    2. int
+    3. long
+  - bilangan desimal
+    1. float
+    2. double
+  - character
+    - char
+  - conditions
+    - bool (true & false)
+  
+- memahami bentuk operator dan cara menggunakanya
+  1. operator aritmatika
+  2. operator komparasi/perbandingan
+  3. operator logika
+  4. operator assignment/penugasan
+  
+- memahami control flow dan dapat menjelaskan serta membedakannya
+  - continue
+  - break
+  - pass
+  - percabangan
+    1. if else conditions
+    2. switch case
+  - perulangan
+    1. while
+    2. do while
+    3. for
+    
+- memahami fungsi increment dan decrement serta dapat menjelaskanya
+  1. pre-increment
+  2. post-increment
+  3. pre-decrement
+  4. post-decrement
+  
+- memahami fungsi dan dapat menjelaskannya beserta dapat membedakannya
+  1. return (fungsi dengan kembalian)
+  2. void (fungsi tanpa nilai kembalian)
+  3. Prototype Fungsi/Deklarasi pada fungsi
+  4. default argument pada fungsi
+  5. overloading function/penimpaan sebuah fungsi
+  6. Recursion Function / fungsi rekursi(fungsi yang mengulang dirinya sendiri)
+
+- memahami scoping pada C++
+  1. global scope
+  2. local scope
+  3. block scope
+ 
+- Memory Management
+  1. Pointer ( pemberi alamat pada suatu variabel )
+  2. Reference ( mengacu pada suatu variabel sehingga nilai dan alamatnya sama )
+
+- Data type Non-Primitive 
+  - Array
+  - multidimensi array

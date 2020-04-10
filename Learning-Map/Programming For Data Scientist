@@ -1,0 +1,911 @@
+BASIC SQL FOR DATA SCIENTIST
+
+=============================================================================================================================
+SQL AND SCRIPT DOCUMENTATION
+--------------------------------------------------
+
+---------------------------
+1. BASIC SQL(bahasa query)
+---------------------------
+Pertanyaan Yang sering ditanyakan :
+  - Apa itu SQL.?
+  - Kenapa SQL Penting.?
+  - Bagaimana cara menggunakan SQL.?
+   
+Prasyarat wajib mengenal :
+
+Database Dan Query
+  - Database merupakan kumpulan informasi yang disampaikan secara sistematik
+    di dalam sistem komputer, dan bagaimana cara kita mengakses data dari Database.?
+    nah dari sini kita mengenal yang namanya Query
+  - Query merupakan request atau permintaan akan informasi yang tersimpan di dalam
+    database.
+    
+    dalam kehidupan sehari-hari kita juga dapat menjumpai Query contohnya dalam memesan
+  makanan disebuah caffe, mas teh manisnya jangan kasih gula ya!, mas sambalnya jangan banyak-banyak ya!,
+  bahkan kita juga bisa menanyakan menu apasih yang paling laris disini.?,
+  
+    nah darisini kita bisa menyimpulkan bahwa Query merupakan sarana kita untuk mengatakan kondisi-kondisi
+  apa yang kita inginkan dari data yang ingin kita ambil dari database.
+  
+    dan bahasa yang umum bagi data scientist adalah SQL (Structured Query Language), dan SQL merupakan bahasa
+  yang kita gunakan untuk analisis, SQL dapat kita gunakan untuk menarik data dari sebuah database yang bertipe
+  RDBMS (Relational DataBase Management System), dan SQL dapat dipakai untuk memanipulasi data di RDBMS seperti
+  CRUD (Create, Read, Update, Delete), data dalam RDBMS disimpan sebagai table, konsepnya mirip seperti yang kita
+  pelajari di sekolahan, contoh :
+  
+    1. table itu memiliki nama, dan kebiasaan yang berlaku adalah nama table ditulis dengan huruf kecil semua dan
+       ketika ada sepasi maka diganti dengan garis bawah "_".
+    2. table itu memiliki field, kita juga dapat menganalogikan field ini seperti kolom-kolom yang ada pada table
+    3. satu baris horizontal dalam table disebut row atau record
+    4. satu baris vertical dalam table disebut dengan column
+  
+  "dan di dunia nyata seorang data scientist bekerja dengan banyak table menghubungkan data dari satu table dengan
+  table yang lainnya"
+  
+  dan semua diatas dapat kita lakukan dengan SQL
+
+--------------------------------------------------
+2. Syntax Dasar SQL ( SELECT, FROM, WHERE, LIMIT )
+--------------------------------------------------
+  memahami penggunaan syntax dasar :
+   - untuk mengambil data dengan SQL menggunakan syntax 
+     - SELECT NAMA_TABLE_YANG_DIINGINKAN
+       contoh penggunaan ada distudi kasus :
+       
+       -----------------------------------------------------------------------------------------------
+       untuk mengambil semua data
+       SELECT * FROM products ====> (*) bintang untuk mengambil semua data yang ada dalam Database
+       -----------------------------------------------------------------------------------------------
+       
+       -----------------------------------------------------------------------------------------------
+       untuk mengambil 3 record/raw menggunakan LIMIT
+       SELECT * FROM products LIMIT 3 ====> LIMIT untuk membatasi pengambilan data
+       -----------------------------------------------------------------------------------------------
+       
+       -----------------------------------------------------------------------------------------------
+       untuk mengambil data sesuai dengan kolomnya
+       SELECT name, category FROM products LIMIT 3 ====> menampilkan sesuai kolom yang diminta yaitu
+                                                         name, dan category
+       -----------------------------------------------------------------------------------------------
+       
+       -----------------------------------------------------------------------------------------------
+       untuk mangambil data yang nilainya berbeda saja
+       SELECT DISTINCT category FROM products ====> menampilkan nilai kategori yang berbeda saja
+       -----------------------------------------------------------------------------------------------
+       
+       -----------------------------------------------------------------------------------------------
+       untuk menamplkan data yang nilainya sama
+       SELECT
+            *
+       FROM products
+       WHERE                        ====> menampilkan data yang nilainya handphone
+            category = "handphone"
+       -----------------------------------------------------------------------------------------------
+       
+       -----------------------------------------------------------------------------------------------
+       untuk menamplkan data dengan 2 nilai yang sama atau lebih
+       SELECT
+            *
+       FROM products
+       WHERE                        ====> menampilkan data yang hanya nilainya handphone dan komputer
+            category IN ("handphone", "computer")
+       -----------------------------------------------------------------------------------------------
+
+       -----------------------------------------------------------------------------------------------
+       untuk menamplkan data menggunakan LIKE
+       SELECT
+            *
+       FROM products
+       WHERE                        ====> menampilkan data yang hanya nilainya handphone dan komputer
+            name LIKE "laptop%"     ====> tanda persen berarti boleh diikuti oleh apapun
+       -----------------------------------------------------------------------------------------------
+
+
+=============================================================================================================================
+DATA SUMMARYZATION AND AGGREGATION BY USING SQL
+--------------------------------------------------
+Syntax Dasar Summaryzation
+  1. ORDER BY
+     - Digunakan untuk mengurutkan data berdasarkan suatu nilai di kolom
+     - dan menggunakan ASC merupakan default dari Order BY yang terurut menaik
+     - dan jika menggunakan DESC merupakan Order BY, urutanya dari terbesar hingga terkecil
+     contoh untuk menentukan 5 produk termahal :
+     ------------------------------------------------
+     SELECT * FROM products
+     ORDER BY prices DESC   ====> mengurutkan dari yang tinggi
+     LIMIT 5                ====> menampilkan 5 produk
+     ------------------------------------------------
+     
+  2. COUNT
+     - digunakan untuk menghitung baris atau data sesuai kondisi
+     contoh menhitung produk
+     ------------------------------------------------
+     SELECT
+          COUNT(*)          ====> menghitung jumlah semua produk yang ada
+     FROM products
+     ------------------------------------------------
+     
+  3. MIN
+     - untuk mencari nilai minimum dari suatu kolom
+  4. MAX
+     - untuk mencari nilai maximum dari suatu kolom
+  5. AVERAGE
+     - untuk mencari nilai rata - rata dari suatu kolom
+  6. SUM
+     - untuk menjumlahkan semua nilai dalam suatu kolom
+  7. GORUP BY
+     - diganakan untuk mengelompokan data berdasar kolom tertentu
+  8. CASE & END
+     - digunakan kondisional 
+  -------------------------------------------------------
+  gabungan contoh dari MIN,MAX,SUM,AVG :
+  SELECT
+       MIN(stock) AS min_stock, ====> AS sebagai alias/mengganti nama field
+       MAX(stock) AS max_stock,
+       SUM(stock) AS sum_stock,
+       AVG(stock) AS avg_stock
+  FROM products
+  -------------------------------------------------------
+  contoh GROUP BY
+  SELECT
+       category,
+       COUNT(*) AS n_product,
+       SUM(stock) AS total_stock,
+       AVG(stock) AS avg_stock
+  FROM products
+  GROUP BY category             ====> Dikelompokan berdasarkan category
+  -------------------------------------------------------
+  contoh CASE END (kalau di C++ kita mengenal dengan istilah switch case)
+  SELECT
+       category,
+       CASE                     ====> menggunakan CASE untuk pengkondisian
+           WHEN price >= 10000000 THEN "Very Expensive"
+           WHEN price >= 5000000 THEN "Expensive"
+           ELSE "cheap"
+       END AS price_type,
+       COUNT(*) AS n_product,   ====> ambil semua banyaknya data
+       SUM(stock) AS total_stock,
+   FROM products
+   GROUP BY category, price_type ====> dikelompokan berdasarkan category dan pricetype
+   -------------------------------------------------------
+   
+=============================================================================================================================
+HOW TO MARGE THE DATA BY USING SQL || referensi Diagram Venn SQL JOIN
+--------------------------------------------------
+Kita akan belajar 2 syntax utamanya yaitu :
+yang sebelumnya kita hanya bermain dengan satu table
+1. Syntax UNION
+   Merupakan syntax yang digunakan untuk menggabungkan isi dari beberapa tabel
+   contoh ini berlaku jika kolomnya sama:
+   
+   -------------------------------------------------------
+   SELECT * FROM products
+   UNION
+   SELECT * FROM virtual_product
+   -------------------------------------------------------
+   
+2. Syntax JOIN
+   merupakan syntax yang digunakan untuk menghubungkan kolom - kolom pada table
+
+
+=============================================================================================================================
+HOW TO DO DATA MODIFICATION BY USING SQL
+--------------------------------------------------
+Modifikasi data yang kita sudah tau dengan istilah CRUD
+- CREATE
+   ada 2 pendekatan :
+   
+   - import CSV yang sudah ada datanya (INSERT INTO)
+   ----------------------------------------------
+   INSERT INTO products
+   VALUES(11,'HP','Handphone',1000000,2) ====> mengisi langsung dan sesuai kolom
+   ----------------------------------------------
+   INSERT INTO products
+   (name,category,price)   ====> mengisi sesuai dengan kolom
+   VALUES('HP','Handphone',1000000)
+   ----------------------------------------------
+   
+   - melakukan dengan query
+   ---------------------------------------------
+   CREATE TABLE "products" (
+      "produtc_id" INTEGER NOT NULL PRYMARY KEY,
+      "name" TEXT NOT NULL,
+      "category" TEXT NOT NULL,
+      "price" REAL NOT NULL,
+      "stock" INTEGER
+   );
+   ---------------------------------------------
+   
+- UPDATE
+   - untuk mengupdate sebuah data dalam Database
+   ---------------------------------------------
+   UPDATE products
+   SET category = "Handphone"  ====> query SET untuk menyetting ulang category
+   WHERE category = "HP"
+   ---------------------------------------------
+   
+- DELETE
+  - untuk mendelete data yang ada di database
+  ----------------------------------------------
+  DELETE FROM products
+  WHERE stock = 0
+  ----------------------------------------------
+  DELETE FROM products
+  WHERE category = 'Computer' AND price < 10000000
+  ----------------------------------------------
+  Hapus table
+  DROP TABLE products
+  ----------------------------------------------
+  INSERT INTO products
+  VALUES(11,'HP','Handphone',1000000,2)
+  ----------------------------------------------
+
+
+=============================================================================================================================
+GITHUB SCRIPTS DOCUMENTATIONS AND COLLABORATIONS
+--------------------------------------------------
+BELAJAR BEKERJA SECARA KOLABORASI MENGGUNAKAN GIT
+
+=============================================================================================================================
+LANGUAGE PROGRAMMING R
+--------------------------------------------------
+Pertanyaan yang banyak ditanyakan mengenai R
+
+- Apa itu R Language.?
+- Apa saja kelebihan dan kekurangan R language.?
+- Apa saja fitur dalam R Language.?
+- Apa saja perbedaan R Language dengan bahasa pemrogramman lain.?
+
+Pengenalan :
+- R merupakan sebuah bahasa pemrograman dan environment yang biasa digunakan untuk stastical computing
+  dan graphics, dan R resmi rilis pada tahun 1997, setiap bahasa pemrograman memiliki tujuan pengembangan yang berbeda 
+  dari yang lainya misalnya :
+  - Javascript dan Ruby untuk pengembangan website
+  - C++ dan C# untuk pengembangan dekstop app
+  - Java dan Swift untuk pengembangan software smartphone
+  
+  mungkin ini menjadi jawaban dari mengapa menggunakan bahasa R karena bahasa pemrograman R spesifik digunakan
+  untuk berbagai keperluan data analytics seperti :
+  - Eksplorasi Data
+  - Visualisasi Data
+  - Automation
+  - Mechine Learning
+  
+  dan bagi data scientist ada 2 bahasa pemrograman yang sering digunakan yaitu Python dan R,
+  perbedaan syntax R dengan Python, yaitu R menggunakan bracket/kurung kurawa "{}" untuk source codenya, sedangkan
+  python tidak menggunakan kurung kurawal tetapi membutuhkan identasi untuk setiap baris kode, jika jumlah indentasinya
+  tidak tepat maka bisa muncul error.
+
+-------------------
+- Kelebihan Pada R
+-------------------
+1. Free dan Open Source
+2. Dapat digunakan diberbagai operating system
+3. instalasi dan konfigurasi R yang cukup mudah | kunjungi website > download > install
+4. codingnya cukup mudah dibandingkan dengan stastistical tool yang lain seperti SAS
+5. sudah digunakan oleh jutaan users dan sudah banyak packages atau library yang dikembangkan
+   sehingga dapat dimanfaatkan banyak orang
+
+
+-------------------
+- Kekurangan Pada R
+-------------------
+- Scalability R yaitu memori manajemenya terkadang tidak begitu bagus sehingga akan repot jika berhadapan pada data 
+  yang terlalu besar, dan pemrosesannya akan menjadi lambat jika melakukan banyak looping tapi secara umum R sangat powerfull
+  
+
+-------------------
+- Keuntungan Menguasai R
+-------------------
+  - Dapat mengolah data dengan mudah
+  - Dapat menghasilkan berbagai insights, visualisasi, dan model mechine learning yang akurat
+
+  dan tentunya R language dapat menyelesaikan masalah dalam berbagai perkerjaan
+
+
+-------------------
+- Vitur Pada R Untuk Pengolahan Data
+-------------------
+1. Pengambilan data, di R kita bisa mengambil data dari berbagai tipe dan format misalnya kita dapat menghubungkan dengan
+   MYSQL atau sejenisnya dan kemudian mengambil datanya melalui Query SQL, kita juga bisa membaca langsung dari file
+   yang sudah dimiliki seperti File Text, CSV, atau format lain seperti Excel
+2. Eksplorasi Data, setelah kita memiliki data, kita bisa melakukan berbagai eksplorasi misalnya seperti :
+   - Data Filtering
+   - Data Arrangement
+   - Data Transformation
+   - Data Summaryzation
+   R sudah menyediakan berbagai function yang dikemas dalam suatu packages atau library untuk memproses dan merapihkan data
+   seperti itu, untuk mempermudah menggali insight kita dapat melakukan visualisasi data dengan membuat berbagai Plot, 
+   Chart dan Grafik, baik yang sederhana maupun yang dapat kita atur sesuai kebutuhan kita.
+
+3. Data Modeling
+   kita juga bisa mengembangkan suatu model mechine learning menggunakan data yang dimiliki
+   baik untuk klasifikasi, regresi, clustering maupun yang lainnya
+
+
+=============================================================================================================================
+BASIC FUNCTION IN R
+--------------------------------------------------
+1. Variable
+2. Operator
+   - komparations (<=,>=,<,==,>,=)
+   - assigment    (+=,-=,/=,*=,%=)
+3. Data Type
+   - integer (bil. bulat)
+   - string  (ada function untuk menggabungkan string yaitu paste("nama", "saya", "majid")
+              dan jika tanpa spasi gunakan paste0)
+   - boolean (Logika)
+   - special values
+     - NA            (Not Available)
+     - NULL          (himpunan kosong)
+     - INF/infinity  (Nilai Tak Hingga) : contoh 10/0, -10/0, 100-Inf,  ini akan menghasilkan nilai tak hingga
+     - NaN           (Not a Number/tidak terdefinisi) : contoh 0/0, Inf-Inf, ini akan menghasilkan nilai 
+                                                        yang tidak terdefinisi
+     
+
+
+=============================================================================================================================
+CONDITIONAL, LOOPING, AND CREATE FUNCTION
+--------------------------------------------------
+Conditional
+  - Percabangan
+    struktur Percabangan pada R
+    ---------------------------
+    if(kondisi){
+      print(statement)
+    } else if (kondisi){
+      print(statement)
+    } else {
+      print(statement)
+    }
+    ---------------------------
+
+Looping
+  - Perulangan pada R ada 2 sama seperti python yaitu while and for dan biasanya for loop digunakan untuk vector, 
+    yaitu sederetan nilai yang memiliki data type yang sama.
+    
+    struktur while :
+    ---------------------------
+    i = 0
+    while(kondisi/syarat){ ====> berarti dalam kondisi yaitu i <= 10
+       print(aksi)
+       i+=1
+    }
+    ---------------------------
+    
+    struktur for :
+    ---------------------------
+    for(i in 1:10){
+        print(aksi)
+    }
+    ---------------------------
+    atau looping sebuah string
+    //diawali dengan c jika bertipe data string
+    names = c('nur','cholis','madid')
+    
+    for(i in names){
+        print(paste("hallo", i)
+    }
+    ---------------------------
+
+Function Pada R
+  - Function biasanya digunakan untuk memproses suatu input dan mengeluarkan suatu output, dan membuat function 
+    bertujuan supaya tidak mengulang suatu aksi yang sama terus menerus.
+    struktur Function pada R
+    ---------------------------
+    luas_segitiga <= function(alas, tinggi){
+      return(alas*tinggi/2)
+    }
+    
+    luas_lingkaran <= function(r){
+      pi <= 3.14
+      luas <= pi*r^2
+      return(luas)
+    }
+    
+    tampilkan_n <= function(n){
+      for(i in 1:n){
+        print(i)
+      }
+    }
+    ---------------------------
+
+
+=============================================================================================================================
+DATA STRUCTURE AND FRAME INTRODUTION IN R
+--------------------------------------------------
+sebelumnya kita sudah membahas mengenai data stucture vector contohnya :
+- names <= c('lizza', 'boyzi', 'majid', 'nur')
+
+---------
+ada beberapa cara untuk mengambil vector seperti :
+- mengambil nilai yang pertama :
+  names[1]
+- mengambil nilai kedua sampai keempat :
+  names[2:4]
+- mengambil nilai kedua dan ke 4 :
+  names[c(2,4)]
+
+
+--------------------------------------
+DATA STRUKTUR SELANJUTNYA YAITU FAKTOR
+--------------------------------------
+Faktor merupakan data sturktur yang mirip dengan vector hanya saja ditambah
+dengan informasi mengenai distinct value (nilai-nilai unik dalam FAKTOR tsb.)
+untuk menggunakan faktor sangant mudah contohnya :
+
+---------
+faktor(names) // ketika kita run maka ada levels yang menunjukan nilai-nilai unik
+faktor(c("male", "female", "male", "female"))
+
+
+--------------------------------------
+DATA STRUKTUR SELANJUTNYA YAITU MATRIX
+--------------------------------------
+Data struktur ini mirip dengan vector namun matrix ini memiliki dua dimensi seperti baris dan kolom
+
+----------------------
+contoh penggunaannya :
+m = matrix(1:12, nrow=3) ====> nrow untuk menentukan recordnya
+hasilnya :
+
+    [,1][,2][,3][,4]
+[1,]  1   4   7   10
+[2,]  2   5   8   11
+[3,]  3   6   9   12
+
+---------
+untuk mengaksesnya kita bisa menggunakan indexing
+m[2] : hasilnya 2
+m[2,4] : hasilnya 11
+
+
+--------------------------------------
+DATA STRUKTUR SELANJUTNYA YAITU ARRAY
+--------------------------------------
+Sama seperti matrix hanya saja array bisa lebih dari dua dimensi
+
+---------------------
+contoh penggunaanya :
+a = array(1:24, c(banyak baris 3, banyak kolom 4, banyak array 2))
+
+hasilnya :
+ - array .. 1
+
+    [,1][,2][,3][,4]
+[1,]  1   4   7   10
+[2,]  2   5   8   11
+[3,]  3   6   9   12
+
+ - array .. 2
+
+    [,1][,2][,3][,4]
+[1,] 13  16  19  22
+[2,] 14  17  20  23
+[3,] 15  18  21  24
+
+---------
+cara mengaksesnya :
+a(2,3,1) : hasilnya 8
+a(2,3,2) : hasilnya 20
+
+
+--------------------------------------
+DATA FRAME
+--------------------------------------
+Kita memasuki data frame yang banyak dipelajari oleh data scientist,
+Data Frama bentuknya seperti tabel, dimana baris menentukan objek dan kolom menunjukan atribut
+
+---------------------------
+contoh penggunaanya yaitu :
+users = data.frame(
+  names = c("nur", "majid", "kolis", "lizza")
+  gender = c("male", "female", "male", "male")
+  age = c(10,20,30,40)
+)
+
+hasilnya :
+    [names]  [gender]  [age]
+[1]   nur      male     10
+[2]   majid    female   20
+[3]   kolis    male     30
+[4]   lizza    male     40
+
+---------
+untuk mengaksesnya :
+users[1] : hasilnya
+  [names]
+   nur   
+   majid 
+   kolis 
+   lizza
+ 
+users['names'] : hasilnya
+  [names]
+   nur   
+   majid 
+   kolis 
+   lizza
+
+users[c('names', 'gender')]
+   [names]  [gender]
+    nur      male
+    majid    female
+    kolis    male
+    lizza    male
+
+---------
+untuk baris menggunakan ',' koma :
+users[2,]
+  [2]   majid    female   20
+
+---------
+bisa kita kombinasikan :
+users[2:3,kolom ke 2]
+  [1]   female   male
+
+
+--------------------------------------
+DATA STRUCTURE YANG TERAKHIR ADALAH LIST
+--------------------------------------
+List sama seperti vector hanya saja list bisa berisi tipe data yang berbeda-beda
+---------------------------
+contoh penggunaanya yaitu :
+
+l = list(a,users,names)
+hasilnya gabungan dari struktur data yang sudah kita bahas diatas
+
+
+=============================================================================================================================
+DATA FRAME OPERATIONS IN R
+--------------------------------------------------
+kita disini akan membahas mengenai fungsi-fungsi penting untuk data frame :
+1. function read
+   digunakan untuk membaca file CSV yang akan diubah menjadi data frame di R
+   contoh :
+   dataset <= read.csv('namafile_dari_csv.csv')
+   
+   kemudian ada operations yang dapat dilakukan terhadap dataset diatas :
+   1. kita bisa melihat summery dari dataset
+      summery(dataset)
+   2. kita juga bisa meilihat isi dari beberapa data frame ini teratas menggunakan head
+      head(dataset) atau mencari nilai 10 teratas :
+      head(dataset,10)
+   3. kita juga bisa melihat ada berapa baris dari dataset diatas dengan menggunakan nrow
+      nrow(dataset) untuk kolom menggunakan
+      ncol(dataset)
+
+2. function write
+    digunakan untuk mengekport data frame menjadi csv
+    contoh :
+    --------------
+    write.csv(namadataframenya, 'nama_file_yang_diexport.csv')
+    atau juga
+    --------------
+    dataset <= write.csv('nama_file.csv')
+    
+    
+--------------------------------------
+Operations DATA FRAME di R menggunakan Lybrary dplyr
+--------------------------------------
+kita install packages dplyr
+Dplyr ini adalah suatu library yang biasa digunakan oleh data scientist untuk memanipulasi
+Data Frame melalui R
+
+kita juga bisa install Tidverse
+Tidverse ini merupakan suatu library yang berisi kumpulan packages di R yang digunakan untuk Data Frame
+dan juga operasi lain terkait dengan data Scientist
+-------------
+
+untuk memanggil library kita cukup masukan
+library('dplyr')
+kita gunakan contoh yang sudah dibahas diatas yaitu dataset
+
+dataset <= read.csv('nama_file.csv')
+
+// glimpse ini untuk menampilkan data frame seperti di CSV
+glimpse(dataset)
+
+// untuk mengambil data tertentu kita juga bisa menggunakan select
+select(dataframenya, ambil_datanya) contoh : select(dataset, order_id)
+
+// dan untuk mengambil lebih dari satu kolom sama seperti vector
+select(dataset, c(order_id, order_date, sales))
+
+// dan untuk menghilangkan kolom tertentu kita menggunakan '-'
+select(dataset, -c(profit,sub_category))
+
+// dan kita bisa mengambil data dengan kriteria yang ingin kita ambil yaitu menggunakan filter
+filter(dataset, segment == 'Consumer', profit > 0)
+filter(dataset, segment == 'Consumer' | profit > 0)
+filter(dataset, segment != 'Consumer' & profit > 0)
+
+// dan untuk membuat kolom baru menggunakan function mutate
+// contoh disini kita membuat kolom average_price yaitu dari sale dibagi quatity
+// dan berbagai operasi aritmatik kita bisa lakukan di mutate
+mutate(dataset, avg_price = sales / quantity)
+
+// ada lagi selain mutate yaitu transmute yaitu function yang biasa digunakan
+// jika ingin membuat kolom baru
+dataset3$avg_price <= transmute(dataset, avg_price = sales / quantity)
+
+-----------
+yang menarik di dplyr kita bisa melakukan piping yaitu kita bisa melakukan berbagai operasi
+sekaligus hanya dalam sekali menjalankan source code
+operasi dalam piping nama data framenya tidak perlu dituliskan
+contoh : 
+--------------------------------
+library(dplyr)
+
+dataset = read.csv('nama_file.csv')
+
+dataset2 <= filter(dataset, segment == "Consumer")
+dataset2 <= mutate(dataset, avg_price = sales/quantity)
+dataset2 <= select(dataset, c(order_id, order_date, avg_price))
+
+jika kita menggunakan piping(%>%) di R adalah :
+dataset3 <= dataset %>% filter(segment == "Consumer") %>% mutate(avg_price = sales/quantity) %>% select(c(order_id, order_date, avg_price))
+--------------------------------
+
+
+=============================================================================================================================
+DATA FRAME SUMMARIZATION AND COMBINATION IN R
+--------------------------------------------------
+Sekarang kita membahas tentang cara menggunakan function group_by dan summarise
+yang digunakan untuk mengelompokan data berdasarkan suatu kolom tertentu
+contoh :
+
+-----------------
+library(dplyr)
+
+dataset <= read.csv('nama_file.csv')
+
+// kita akan melakukan pengelompokan segment, jadi dibedakan menjadi beberapa segment
+// function summarise ini berisi kolom yang mana saja yang akan disummarise berdasarkan group_by
+// jadi untuk persegment apa saja yang akan kita hitung misal kita ingin menghitung total sells
+dataset %>% group_by(segment) %>% summarise(total_sales = sum(sales), avg_sales = mean(sales))
+
+// dan untuk menghitung jumlah baris kita gunakan function n yaitu digunakan untuk menghitung jumlah baris dan
+// function ini tidak membutuhkan parameter
+dataset %>% group_by(segment) %>% summarise(total_sales = sum(sales), total_baris = n())
+
+-----------------
+Ada 2 Jenis penggabungan data frame yaitu
+1. berdasarkan barisnya
+   berikut functionnya :
+   data_a <= dataset %>% filter(segment == "Corporate") %>%
+      select(c(order_id, order_date, segment, category, sub_category, sales)) %>%
+      head(10)
+   
+   data_b <= dataset %>% filter(segment == "Technology") %>%
+      select(c(order_id, order_date, segment, category, sub_category, sales)) %>%
+      head(9)
+   
+   // intersect ini digunakan untuk memilih baris baris yang isinya sama
+   intersect(data_a, data_b)
+   
+   // union digunakan untuk menggabungkan semua baris, jika ada yang sama
+   // cukuo dumasukan satu kali
+   union(data_a,data_b)
+   
+   // bind rows semua dataset akan ditumpuk
+   bind_row(data_a, data_b)
+   
+   // setdiff merupakan kebalikan dari intersect yang dimunculkan adalah baris-baris
+   // yang tidak semua
+   setdiff(data_a, data_b)
+
+2. berdasarkan kolomnya
+berikut functionnya :
+   data_a <= dataset %>% filter(segment == "Corporate") %>%
+      select(c(order_id, order_date, segment, category, sub_category, sales)) %>%
+      head(10)
+   
+   data_b <= dataset %>% filter(segment == "Technology") %>%
+      select(c(order_id, order_date, segment, category, sub_category, sales)) %>%
+      head(9)
+      
+   data_c <= select(data_a, c(order_id,sub_category,segment,sales)) %>% head(9)
+   data_d <= select(data_b, c(order_id,sub_category,category,order_date))
+   
+   // untuk menggabungkan kolom jumlah baris harus sama
+   // untuk menggabungkan kolom menggunakan
+   bind_cols(data_c,data_d)
+   
+   // untuk menggabungkan semua data bisa menggunakan full_join
+   full_join(data_c, data_d)
+   
+   // untuk menggabungkan data menggunakan inner_join
+   // jika ada nilai yang sama maka di timpa
+   inner_join(data_c, data_d)
+   
+   // semua data_c yang ada di data_d jika ada pasangannya maka akan ada isinya
+   left_join(data_c, data_d)
+   // kebalikan
+   right_join(data_c, data_d)
+
+
+=============================================================================================================================
+VISUALITATION IN R
+--------------------------------------------------
+disini kita akan menggunakan library dplyr untuk operation data frame dan 
+ggplot untuk visualiasi
+
+cara install 
+install.packages(ggplot2)
+
+------------------------------
+berikut adalah contoh keduanya
+
+library(dplyr)
+library(ggplot2)
+
+dataset <= read.csv('nama_file.csv')
+
+// kita akan melakukan visualisasi dengan teknik scatter plot yaitu bentuknya seperti koordinat dan setiap
+// titik dilambangkan setiap data di data frame
+
+membuat scatter plot
+ggplot(dataset, aes(x = sales, y = profit)) + geom_point()
+
+membuat histogram
+// alasan menggunakan bins atau juga bindwidth untuk membatasi panjang histogram
+ggplot(dataset, aes(x = sales)) + geom_histogram(bins = 10)
+
+membuat bar chart
+dataset1 <- filter(dataset, profit > 0) // mengambil yang profitnya lebih dari 0
+// pada aes(fill) digunakan untuk memberi nilai per barnya, dan menggunakan stat identity pada geom_bar
+ggplot(database1, aes(x = category, y = profit)) + 
+  geom_bar(stat = 'identity', width = 0.5, aes(fill = segment))
+  
+membuat pie chart
+// biasanya sebelum membuat pie chart kita kelompokan terlebih dahulu dataset yang kita buat dengan group_by dan summarise
+// %>% (dalam R disebut dengan piping)
+sales_per_segment = dataset %>% gorup_by(segment) %>% summarise(sales = sum(sales))
+
+// setelah kita kelompokan maka kita lakukan visualisasi menggunakan ggplot
+// untuk pie kita cuma menambahkan function coord_polar(kordinat_yang_akan_dijadikan_pie, mulai_dari)
+gglplot(sales_per_segment, aes(x="", y=sales, fill=segment)) + geom_bar(stat='identity') + coord_polar("y", start=0)
+
+membuat line chart
+ada 2 pendekatan yaitu 
+1. menggunakan stat_summary()
+// disini kita ingin mencari nilai sales dengan melihat per bulan, jadi kita konvert order_date menjadi tanggal kemudian bulan
+dataset$order_date <- as.Date(dataset$order_date) // menggunakan fungsi as.Date untuk menjadikannya sebagai tanggal
+dataset$order_month <- as.Date(cut(dataset$order_date, breaks="month)) // menggunakan cut untuk menjadikannya bulan dengan
+                                                                       // parameter breaks
+
+ggploit(dataset, aes(x=order_month, y=sales)) + stat_summary(fun=sum, geom="line") // geom kita ubah menjadi line
+
+2. menggunakan geom_line()
+// sebelum itu kita lakukan pengelompokan untuk sales dalam bulan dengan cara
+monthly_sales <- dataset %>% group_by(order_month) %>% summarise(sales=sum(sales))
+
+// kemudian kita visualisasikan menggunakan ggplot
+// tinggal kita masukan geom_line, dan kita juga bisa menggabungkan dengan titik-titik yaitu geom_point
+ggplot(monthly_sales, aes(x=order_month, y=sales)) + geom_line() + geom_point(colours = 'blue')
+
+
+------------------------------------
+Building advance Chart in R Language
+------------------------------------
+kita masuk dalam proses terakhir di R yaitu tahap customitation
+kita gunakanan dplyr untuk data frame-nya, dan ggplot sebagai visualisasinya, oke mulai :
+
+/* referensi
+  geom_point()  = metode scatter plot/ menggunakan titik koordinat
+  geom_smooth() = metode untuk menambahkan garis linear pada geom_point, menggunakan (metode = 'lm') untuk parameternya
+*/
+
+// tambahkan library dplyr dan ggplot2
+library(dplyr)
+library(ggploit2)
+
+// import data kedalam Rstudio
+dataset <- read.csv('database.csv')
+
+// dari sini kita bisa melakukan visualisasi dan customisasi dengan sebuah data yang kita import diatas
+// gunakan ggploit untuk visualisasi, dan program hari ini kita ingin mengetahui profit dari penjualan
+ggplot(dataset, aes(x=sales, y=profit))
+
+// dan menggunakan metode scatter plot untuk visualisasinya, gunakan fungsi geom_point()
+ggplot(dataset, aes(x=sales, y=profit)) + geom_point()
+
+// darisini kita bisa cutomisasi seperti menambahkan warna, besarnya titik, atau juga kita bisa mewarnasi sesaui dengan 
+// segmentnya yaitu dengan menggunakan aes() dan parameternya menggunakan (color kemudian masukan segment)
+// dengan parameter yang ada di geom_point()
+ggplot(dataset, aes(x=sales, y=profit)) + geom_point(aes(color=segment)) 
+
+  // atau untuk merubah warna
+    ggplot(dataset, aes(x=sales, y=profit)) + geom_point(color='blue')
+
+  // atau juga merubah ukuran dan bidangnya menggunakan size dan shape, untuk shape cari referensi sendiri
+    ggplot(dataset, aes(x=sales, y=profit)) + geom_point(color='blue', size=4, shape=18)
+    
+// menambahkan garis linear yaitu menggunakan geom_smooth(method='lm')
+// kita juga customisasi garisnya dengan parameter yang ada didalamnya misalnya tipe garis-nya kita rubah menjadi
+// (dash, longdash, dotdash, dot) menggunakan parameter linetype=
+// kita juga bisa merubah warnanya
+ggplot(dataset, aes(x=sales, y=profit)) + 
+  geom_point(aes(color=segment)) +
+  geom_smooth(method='lm', linetype='longdash', color='red')
+  
+// kita juga bisa menambahkan judul, subjudul, atau caption menggunakan labs()
+// dan kita bisa mengganti nama kordinat sales dan profit menggunakan xlab() dan ylab()
+// dan kita juga bisa menggunakan limit untuk koordinat yang ingin kita tampilkan menggunakan xlimit() dan ylimit()
+ggplot(dataset, aes(x=sales, y=profit)) + 
+  geom_point(aes(color=segment)) +
+  geom_smooth(method='lm') +
+  labs(
+    title = "Sales vs Profit",
+    subtitle = "Based On in superstore",
+    caption = "author : nurcholis_majid"
+  ) +
+  xlab("Order Sales") + ylab("Order Profit") +
+  xlim(c(0,7500)) + ylim(c(-2500,2500))
+  
+// kita juga dapat mengcustomisasi legend yaitu keterangan yang defaultnya ada di sebelah kanan, kita bisa cusomisasi
+// menjadi dibawah dengan theme() didalamnya ada parameter seperti legend.position merubah posisi menjadi buttom/dibawah,
+// legend.text untuk custom textnya seperti ukuran, warna dll
+ggplot(dataset, aes(x=sales, y=profit)) + 
+  geom_point(aes(color=segment)) +
+  geom_smooth(method='lm') +
+  labs(
+    title = "Sales vs Profit",
+    subtitle = "Based On in superstore",
+    caption = "author : nurcholis_majid"
+  ) +
+  xlab("Order Sales") + ylab("Order Profit") +
+  xlim(c(0,7500)) + ylim(c(-2500,2500)) +
+  theme(
+    legend.position = "bottom",
+    legend.text = element_text(color='red'), // gunakan element text jika berkaitan dengan huruf
+    legend.title = element_text(color='blue')
+  )
+  
+// kita juga bisa kastemisasi judul diatas dengan menggunakan parameter pada theme yaitu plot.
+ggplot(dataset, aes(x=sales, y=profit)) + 
+  geom_point(aes(color=segment), size=4, shape=18) +
+  geom_smooth(method='lm', color='red', size=1) +
+  labs(
+    title = "Sales vs Profit",
+    subtitle = "Based On in superstore",
+    caption = "author : nurcholis_majid"
+  ) +
+  xlab("Order Sales") + ylab("Order Profit") +
+  xlim(c(0,7500)) + ylim(c(-2500,2500)) +
+  theme(
+    legend.position = "bottom",
+    legend.text = element_text(color='red'), // gunakan element text jika berkaitan dengan huruf
+    legend.title = element_text(color='blue'),
+    plot.title = element_text(size=15, face='bold', color='blue'), // menggunakan parameter plot.
+    plot.subtitle = element_text(size=13, face='italic')
+  )
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+

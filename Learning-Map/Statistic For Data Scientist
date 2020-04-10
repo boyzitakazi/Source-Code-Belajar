@@ -1,0 +1,60 @@
+[-]. Tipe data statistic
+  dapat dikelompokan dalam
+    1. jenis
+      - Data katagorikal
+        - skala nominal
+        - skala ordinal
+        
+      - Data numerical
+        - skala interval
+        - skala rasio
+        
+    2. cara memperoleh data
+      - Data primer (observarsi)
+      - Dara skunder (sumber tidak langsung)
+      
+    3. cara pengukurannya
+      - Data kualitatif
+      - Data kuantitatif
+ 
+[-]. Sample dan Population (Pahami)
+[-]. Teknik Sampling
+    1. Simple random sampling (bersifat homogen)
+    2. Stratified random sampling (bersifat kelompok)
+    3. Clustring sampling
+    4. Sistematik random sampling
+ 
+[-]. Statiska Deskriptif
+    1. Ringkasan Numeric
+      - Pemusatan Data
+        - biasanya mean, median, modus
+      - Penyebaran Data
+        - variansi (beragam)
+        - standar deviasi
+        
+    2. Visualisasi Data (grafis)
+      - contoh : bagan, tabel, grafik
+      - Grafik Statiska
+        1. Grafik perbandingan
+          - Bar chart (diagram batang)
+          - Line chart (diagram garis)
+        
+        2. Grafik distribusi
+          - Bar Histogram (tidak memiliki ruang alias rapat)
+          - Line Histogram
+          
+        3. Grafik komposisi
+          1. Grafik Statis
+            - pie chart
+            - waterfall chart
+            
+          2. Grafik Dinamis (berganti setiap waktu)
+            - stacked bar chart (masa priodenya sedikit dan membandingkan relative and absolut differences)
+            - stacked 100% bar chart (membandingkan relative defference)
+            - stacked area bar chart (memiliki banyak priode dan membandingkan relative & absolute defference)
+            - stacked area 100% chart (membandingkan relative defference)
+            
+        4. Grafik hubungan
+          - scatter plot
+          - scatter plot bubble size
+          
