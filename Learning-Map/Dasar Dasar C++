@@ -14,10 +14,13 @@
     - bool (true & false)
   
 - memahami bentuk operator dan cara menggunakanya
-  1. operator aritmatika
-  2. operator komparasi/perbandingan
-  3. operator logika
-  4. operator assignment/penugasan
+  1. Operator Aritmatika ( *, +, -, /, % )
+  2. Operator Komparasi/perbandingan ( <, >, !=, ==, <=, >= )
+  3. Operator Logika (&&, ||, !)
+  4. Operator Assignment/penugasan ( +=, -=, /=, *=, ... )
+  5. Operator Tenary ( ekuivalen dengan if else |  kondisi ? action1 : action2)
+  6. Operator Bitwise ( lib-nya bitset, &, |, ~, ^, <<, >> )
+  7. Operator Casting ( merubah jenis tipe data-nya : simbo (tipe datanya))
   
 - memahami control flow dan dapat menjelaskan serta membedakannya
   - continue
