@@ -73,7 +73,7 @@
       - Subtitusi String (replace, insert, swap)
       - Komparasi String
       - Akses Substring (find, substr)
-      - getline console (getline(cin, variabel))
+      - getline console (getline(cin, variabel), biasanya untuk input kalimat)
   - Struct (tipe data yang dimana 1 data memiliki banyak komponen/element-element)
     - Nesting Struct
   - Union  (tipe data yang dimana 1 data memiliki banyak komponen/element-element, dan saling berhubungan jika
