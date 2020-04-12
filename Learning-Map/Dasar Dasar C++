@@ -36,10 +36,10 @@
     3. for
     
 - memahami fungsi increment dan decrement serta dapat menjelaskanya
-  1. pre-increment
-  2. post-increment
-  3. pre-decrement
-  4. post-decrement
+  1. pre-increment  (++i)
+  2. post-increment (i++)
+  3. pre-decrement  (--i)
+  4. post-decrement (i--)
   
 - memahami fungsi dan dapat menjelaskannya beserta dapat membedakannya
   1. return (fungsi dengan kembalian)
