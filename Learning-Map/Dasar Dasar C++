@@ -21,6 +21,7 @@
   5. Operator Tenary ( ekuivalen dengan if else |  kondisi ? action1 : action2)
   6. Operator Bitwise ( lib-nya bitset, &, |, ~, ^, <<, >> )
   7. Operator Casting ( merubah jenis tipe data-nya : simbo (tipe datanya))
+  8. Operator Comma ( simbol (), cara (expression1, expression2, expression3, ....) )
   
 - memahami control flow dan dapat menjelaskan serta membedakannya
   - continue
