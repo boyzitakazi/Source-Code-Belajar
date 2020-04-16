@@ -79,4 +79,9 @@
   - Union  (tipe data yang dimana 1 data memiliki banyak komponen/element-element, dan saling berhubungan jika
             salah satu data diubah maka yang lainnya akan berubah)
             
-      
+OPERASI STREAM
+  - fstream (file stream)
+    - ifstream (mengambil)
+    - ofstream (menampilkan)
+      ios::app | ios::out | ios::binary | ios::trunc ....
+      buatlah latihan membaca file dan menulis file dengan binary
