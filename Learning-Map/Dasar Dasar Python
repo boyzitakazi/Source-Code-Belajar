@@ -1,2 +1,11 @@
-Belum ada
- 
+1. Tipe Data
+   Numeric
+     - int
+     - float
+     - complex
+   String (string utuh bersifat mutable/dapat berubah, tetapi elemennya bersifat imutable/abadi)
+   Boolean (bool)
+   List (Dapat berisi semua tipe data)
+   Tuple (sama seperti list tetapi tidak dapat diubah nilainya,)
+   Set (kumpulan item bersifat unik dan tanpa urutan)
+      - Pada Set kita dapat melakukan union dan intersection, sekaligus otomatis melakukan penghapusan data duplikat.
