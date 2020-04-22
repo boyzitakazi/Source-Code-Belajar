@@ -1,11 +1,28 @@
 1. Tipe Data
-   Numeric
+   - Numeric
      - int
      - float
      - complex
-   String (string utuh bersifat mutable/dapat berubah, tetapi elemennya bersifat imutable/abadi)
-   Boolean (bool)
-   List (Dapat berisi semua tipe data)
-   Tuple (sama seperti list tetapi tidak dapat diubah nilainya,)
-   Set (kumpulan item bersifat unik dan tanpa urutan)
+   - String (string utuh bersifat mutable/dapat berubah, tetapi elemennya bersifat imutable/abadi)
+   - Boolean (bool)
+   - List (Dapat berisi semua tipe data, simbolnya diawali dengan '[]')
+   - Tuple (sama seperti list tetapi tidak dapat diubah nilainya, simbolnya diawali dengan '()')
+   - Set (kumpulan item bersifat unik dan tanpa urutan simbolnya diawali dengan '{}')
       - Pada Set kita dapat melakukan union dan intersection, sekaligus otomatis melakukan penghapusan data duplikat.
+   - Dictionary (terdiri dari 'key':'value'}
+   - Konversi (jika di C++ disebut dengan casting operator yaitu str(), float() dll.)
+   
+2. Input Dan Output
+   - Argument Specifier (sama dengan C++ ada penambahan (%x %X) berari hexadesimal x kecil lower dan X besar Upper)
+   - Mengenal Dynamic Typing (Duck Typing) “if it walks like a duck and it quacks like a duck, then it must be a duck”
+
+3. Transformasi Angka, Karakter, Dan String
+   ---
+   Transformasi angka
+   Menambahkan awalan 0 pada angka
+
+   Misalnya untuk nomor nota atau nomor antrian, Anda akan menemui kebutuhan menambahkan awalan 0 
+   (0001 untuk angka 1, 0101 untuk angka 101, dan sebagainya). Anda dapat menggunakan fungsi zfill(). 
+   Catatannya adalah angka harus dikonversi ke string terlebih dahulu:
+   ---
+   
