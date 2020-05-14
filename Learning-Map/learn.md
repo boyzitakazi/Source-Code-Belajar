@@ -1,5 +1,9 @@
 <h1>Road Map Belajar C++</h1>
 <img src="https://img.icons8.com/all/500/c-plus-plus-logo.png", width=250px, height=250px />
+[![Travis]()]()
+[![Scrutinizer]()]()
+[![Packagist]()]()
+
 <ol>
   <li>Memahami <b><i>Printing(output)</i></b> dan <b><i>Masukan(input)</i></b></li>
   <li>Memahami <b><i>Variable, Inisialisasi</i></b> dan <b><i>Deklarasi</i></b></li>
