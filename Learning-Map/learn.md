@@ -64,4 +64,45 @@
   4. default argument pada fungsi
   5. overloading function/penimpaan sebuah fungsi
   6. Recursion Function / fungsi rekursi(fungsi yang mengulang dirinya sendiri)</pre>
+
+<li> memahami scoping pada C++ </li>
+<pre>
+  1. global scope
+  2. local scope
+  3. block scope</pre>
+ 
+<li> Memory Management </li>
+<pre>
+  1. Pointer ( pemberi alamat pada suatu variabel )
+  2. Reference ( mengacu pada suatu variabel sehingga nilai dan alamatnya sama )</pre>
+
+<li> Memahami dan dapat menjelaskan Data type Non-Primitive </li>
+<pre>
+  - Array
+    - Multidimensi array
+    Wajib Dicoba:
+      - Looping Array
+      - Search Array (binary_search)
+      - Operasi Array
+      - Sorting Array (sort)
+  - String (kumpulan dari banyak character)
+    Wajib Dicoba:
+      - Operasi String
+      - String pada Array
+      - Subtitusi String (replace, insert, swap)
+      - Komparasi String
+      - Akses Substring (find, substr)
+      - getline console (getline(cin, variabel), biasanya untuk input kalimat)
+  - Struct (tipe data yang dimana 1 data memiliki banyak komponen/element-element)
+    - Nesting Struct
+  - Union  (tipe data yang dimana 1 data memiliki banyak komponen/element-element, dan saling berhubungan jika
+            salah satu data diubah maka yang lainnya akan berubah)</pre>
+            
+<li>OPERASI STREAM</li>
+<pre>
+  - fstream (file stream)
+    - ifstream (mengambil)
+    - ofstream (menampilkan)
+      ios::app | ios::out | ios::binary | ios::trunc ....
+      buatlah latihan membaca file dan menulis file dengan binary</pre>
 </ol>
