@@ -6,4 +6,4 @@
 <img src="https://github.com/boyzitakazi/Source-Code-Belajar/blob/master/Python%20Course%20For%20Data%20Science/img/Logo%20Optional/matplotlib.svg" width=300px height=120px/>
 <img src="https://github.com/boyzitakazi/Source-Code-Belajar/blob/master/Python%20Course%20For%20Data%20Science/img/Logo%20Optional/numpy.png" width=300px height=120px/>
 <img src="https://github.com/boyzitakazi/Source-Code-Belajar/blob/master/Python%20Course%20For%20Data%20Science/img/Logo%20Optional/pandas.png" width=300px height=165px/>
-<img src="https://github.com/boyzitakazi/Source-Code-Belajar/blob/master/Python%20Course%20For%20Data%20Science/img/Logo%20Optional/sklearn.png" width=300px height=120px/>
+<img src="https://github.com/boyzitakazi/Source-Code-Belajar/blob/master/Python%20Course%20For%20Data%20Science/img/Logo%20Optional/sklearn.png" width=160px height=120px/>
