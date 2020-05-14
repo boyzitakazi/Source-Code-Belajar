@@ -1,8 +1,8 @@
 # Melihat A.I Dari Sisi Teknis
 ### What Is Artificial Intelligent.?
 
-A.I merupakan suatu simulasi kecerdasar buatan untuk mengerjakan suatu permasalahan secara efektif,
-A.I meliputi proses program yang
+<p>A.I merupakan suatu simulasi kecerdasar buatan untuk mengerjakan suatu permasalahan secara efektif,
+A.I meliputi proses program yang</p>
   * Reasoning
     (kemampuan mesin untuk menggunakan data atau informasi agar menampilkan output yang tepat)
   * Planning
