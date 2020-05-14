@@ -1,5 +1,5 @@
-## MELIHAT A.I DARI SISI TEKNIS
-#### WHAT IS ARTIFICIAL INTELLIGENCES.?
+# Melihat A.I Dari Sisi Teknis
+### What Is Artificial Intelligent.?
 
 A.I merupakan suatu simulasi kecerdasar buatan untuk mengerjakan suatu permasalahan secara efektif,
 A.I meliputi proses program yang
@@ -15,25 +15,24 @@ Penting.!
 * 4 proses kecerdasan adalah perencanaan, perhatian, simultan, dan berurutan
 
 Konsepsi A.I
-- A.I butuh manusia
-- A.I sekarang masih kecil perkembangannya
-- A.I masih ekplorasi dalam 1 bidang
+* A.I butuh manusia
+* A.I sekarang masih kecil perkembangannya
+* A.I masih ekplorasi dalam 1 bidang
 
-================================================= CABANG A.I ================================================
-BRANCES OF A.I
+### Cabang A.I (Brance Of A.I)
 
-- pemetaan A.I
-  1. Berdasarkan cara kerja A.I
-    - Rule Based A.I (berdasarkan aturan)
-    - Mechine Learning (mesin dimasukan data oleh manusia untuk mencari pola tertentu)
-  2. Berdasarkan Kegunaannya
-    - Computer vision (memiliki fokus untuk mengolah gambar dari foto, video, atau langsung dari kamera)
+* pemetaan A.I
+  * Berdasarkan cara kerja A.I
+    * Rule Based A.I (berdasarkan aturan)
+    * Mechine Learning (mesin dimasukan data oleh manusia untuk mencari pola tertentu)
+  * Berdasarkan Kegunaannya
+    * Computer vision (memiliki fokus untuk mengolah gambar dari foto, video, atau langsung dari kamera)
       contoh : Facial Recognition (pengenalan wajah)
-    - Natural Language Prosessing (NLP)/ (meniru kemampuan manusia untuk berbicara dan berbahasa dan fokus dari NLP
+    * Natural Language Prosessing (NLP)/ (meniru kemampuan manusia untuk berbicara dan berbahasa dan fokus dari NLP
       adalah pemahaman terhadap manusia dalam bentuk suara dan teks) contoh : dapat mengenali suara
-    - Speech Recognition (Menerjemahkan bahasa manusia yang diucapkan secara alami,
+    * Speech Recognition (Menerjemahkan bahasa manusia yang diucapkan secara alami,
       menjadi instruksi yang dapat dipahami oleh komputer)
-    - Robotic (fokus untuk membangun mesin fisik demi menjalankan berbagai fungsi yang membutuhkan tangan manusia)
+    * Robotic (fokus untuk membangun mesin fisik demi menjalankan berbagai fungsi yang membutuhkan tangan manusia)
 
 inti penting A.I adalah data, semakin banyak data/informasi dari A.I maka semakin akurat outputnya
 
