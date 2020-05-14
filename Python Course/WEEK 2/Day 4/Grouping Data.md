@@ -55,6 +55,6 @@ Untuk memahami mater lebih lanjut, silahkan kalian tonton video berikut.
 
 <h2>Video Pembelajaran</h2>
 <ul>
-    <li><a href="https://youtu.be/FQWm_HJAhJ8">Reshaping Data 1</a></li>
-    <li><a href="https://youtu.be/I1ZTZuZ1dtw">Reshaping Data 2</a></li>
+    <li><a href="https://youtu.be/FQWm_HJAhJ8">Grouping Data 1</a></li>
+    <li><a href="https://youtu.be/I1ZTZuZ1dtw">Grouping Data 2</a></li>
 </ul>
