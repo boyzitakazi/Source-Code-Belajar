@@ -28,7 +28,7 @@ df = pd.DataFrame([('bird', 'Falconiformes', 389.0),
 df
 ```
 
-<img src="" alt="reshaping_data">
+<img src="https://github.com/boyzitakazi/Source-Code-Belajar/blob/master/Python%20Course/img/grouping_data.png" alt="grouping_data">
 
 Mari kita praktikan method groupby terhadap data tersebut. milskan kita group data tersebut berdasarkan class.
 
