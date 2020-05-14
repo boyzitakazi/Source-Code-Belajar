@@ -5,23 +5,21 @@
   <li> memahami tipe data dan bisa menghitung nilai tipe data beserta kegunaanya </li>
   <ul>
     <li> bilangan bulat </li>
-    <ol>
+    <ul>
       <li>short</li>
       <li>int</li>
       <li>long</li>
-    </ol>
-    
+    </ul>
     <li> bilangan desimal </li>
-    <ol>
-    <li>float</li>
-    <li>double</li>
-    </ol>
-    
+    <ul>
+      <li>float</li>
+      <li>double</li>
+    </ul>
     <li>character</li>
-    <ol>
-    <li>char</li>
-    <li>conditions</li>
-    <li>bool (true & false)</li>
-    </ol>
+    <ul>
+      <li>char</li>
+      <li>conditions</li>
+      <li>bool (true & false)</li>
+    </ul>
   </ul>
 </ol>
