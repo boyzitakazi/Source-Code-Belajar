@@ -76,7 +76,20 @@ Apabila kita ingin menggabungkan data tersebut berdasarkan column, kita mesti me
 ```sh
 pd.concat(list_dataframe, axis=1)
 ```
-<img src="" alt="screenshot_tabel">
+|	|	A 	|	B 	|	C 	|	D 	|	A 	|	B 	|	C 	|	D 	|	A 	|	B 	|	C 	|	D 	|
+|---|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|
+|0	|A0		|B0		|C0		|D0		|NaN	|NaN	|NaN	|NaN	|NaN	|NaN	|NaN	|NaN	|
+|1	|A1		|B1		|C1		|D1		|NaN	|NaN	|NaN	|NaN	|NaN	|NaN	|NaN	|NaN	|
+|2	|A2		|B2		|C2		|D2		|NaN	|NaN	|NaN	|NaN	|NaN	|NaN	|NaN	|NaN	|
+|3	|A3		|B3		|C3		|D3		|NaN	|NaN	|NaN	|NaN	|NaN	|NaN	|NaN	|NaN	|
+|4	|NaN	|NaN	|NaN	|NaN	|A4		|B4		|C4		|D4		|NaN	|NaN	|NaN	|NaN	|
+|5	|NaN	|NaN	|NaN	|NaN	|A5		|B5		|C5		|D5		|NaN	|NaN	|NaN	|NaN	|
+|6	|NaN	|NaN	|NaN	|NaN	|A6		|B6		|C6		|D6		|NaN	|NaN	|NaN	|NaN	|
+|7	|NaN	|NaN	|NaN	|NaN	|A7		|B7		|C7		|D7		|NaN	|NaN	|NaN	|NaN	|
+|8	|NaN	|NaN	|NaN	|NaN	|NaN	|NaN	|NaN	|NaN	|A8		|B8		|C8		|D8		|
+|9	|NaN	|NaN	|NaN	|NaN	|NaN	|NaN	|NaN	|NaN	|A9		|B9		|C9		|D9		|
+|10	|NaN	|NaN	|NaN	|NaN	|NaN	|NaN	|NaN	|NaN	|A10	|B10	|C10	|D10	|
+|11	|NaN	|NaN	|NaN	|NaN	|NaN	|NaN	|NaN	|NaN	|A11	|B11	|C11	|D11	|
 
 Coba kalian perhatikan, penggabungan ini adalah penggabungan sumbu column pada setiap dataframe, dan pada sumbu baris di lakukan penggabungan juga berdasarkan indeks. secara default logika penggabunganya adalah outer join. kita akan melihat beberapa logika penggabungan setelah ini.
 
@@ -136,8 +149,15 @@ Kita akan menggabungkan data ini denga menggunakan method merge() dari pandas. d
 # gabungkan data dengan logika outer join
 pd.merge(left, right, on='key', how='outer')
 ```
+|	|   key |	A	|	B	|	C	|	D 	|
+|---|-------|-------|-------|-------|-------|
+|0	|	K0	|A0		|B0		|C0		|D10    |
+|1	|	K1	|A1		|B1		|C1		|D1     |
+|2	|	K2	|A2		|B2		|NaN	|NaN    |
+|3	|	K3	|A3		|B3		|NaN	|NaN    |
+|4	|	K4	|NaN	|NaN	|C2		|D2  	|
+|5	|	K5	|NaN	|NaN	|C3		|D3 	|
 
-<img src="" alt="screenshot_tabel1">
 
 <h3>Inner Join</h3>
 
@@ -150,8 +170,10 @@ Kita akan mencoba melakukan inner join dengan data yang sama pada outer join, Un
 ```sh
 pd.merge(left, right, on='key', how='inner')
 ```
-
-<img src="" alt="screenshot_tabel2">
+|	|	key	|	A	|	B	|	C	|	D 	|
+|---|-------|-------|-------|-------|-------|
+|0	|	K0	|	A0	|	B0	|	C0	|	D0 	|
+|1	|	K1	|	A1	|	B1	|	C1	|	D1 	|
 
 Coba perhatikan, bahwa data yang di gabungkan adalah data yang mempunyai nilai key beririsan.
 
@@ -166,9 +188,15 @@ Kita akan mencoba melakukan left outer join dengan data yang sama pada outer joi
 ```sh
 pd.merge(left, right, on='key', how='left')
 ```
-<img src="" alt="screenshot_tabel3">
 
-Right Join
+|	|	key	|	A	|	B	|	C	|	D 	|
+|---|-------|-------|-------|-------|-------|
+|0	|	K0	|	A0	|	B0	|	C0	|D0 	|
+|1	|	K1	|	A1	|	B1	|	C1	|D1 	|
+|2	|	K2	|	A2	|	B2	|	NaN	|NaN 	|
+|3	|	K3	|	A3	|	B3	|	NaN	|NaN 	|
+
+<h3>Right Join</h3>
 
 Right outer join ini hanya kebalikan dari left outer join.
 
@@ -177,7 +205,12 @@ Untuk melakukan operasi penggabungan right outer join dengan metode merge, kita 
 ```sh
 pd.merge(left, right, on='key', how='right')
 ```
-<img src="" alt="screenshot_tabel4">
+|	|	key	|	A	|	B	|	C	|	D 	|
+|---|-------|-------|-------|-------|-------|
+|0	|	K0	|	A0	|	B0	|	C0	|	D0 	|
+|1	|	K1	|	A1	|	B1	|	C1	|	D1 	|
+|2	| 	K4	|	NaN	|	NaN	|	C2	|	D2 	|
+|3	|	K5	|	NaN	|	NaN	|	C3	|	D3 	|
 
 <h2>Video Pembelajaran</h2>
 <ul>
