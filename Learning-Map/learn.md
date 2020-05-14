@@ -21,9 +21,9 @@
       <li>conditions</li>
       <li>bool (true & false)</li>
     </ul>
-  
+  </ul>
 
-  <li>memahami bentuk operator dan cara menggunakanya</li>
+  <li> memahami bentuk operator dan cara menggunakanya </li>
     <pre>
     1. Operator Aritmatika ( *, +, -, /, % )
     2. Operator Komparasi/perbandingan ( <, >, !=, ==, <=, >= )
@@ -33,5 +33,4 @@
     6. Operator Bitwise ( lib-nya bitset, &, |, ~, ^, <<, >> )
     7. Operator Casting ( merubah jenis tipe data-nya : simbo (tipe datanya))
     8. Operator Comma ( simbol (), cara (expression1, expression2, expression3, ....) )</pre>
-    </ul>
 </ol>
