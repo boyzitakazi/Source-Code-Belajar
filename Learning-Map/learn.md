@@ -95,8 +95,8 @@
       - getline console (getline(cin, variabel), biasanya untuk input kalimat)
   - Struct (tipe data yang dimana 1 data memiliki banyak komponen/element-element)
     - Nesting Struct
-  - Union  (tipe data yang dimana 1 data memiliki banyak komponen/element-element, dan saling berhubungan jika
-            salah satu data diubah maka yang lainnya akan berubah)</pre>
+  - Union  (tipe data yang dimana 1 data memiliki banyak komponen/element-element, 
+            dan saling berhubungan jika salah satu data diubah maka yang lainnya akan berubah)</pre>
             
 <li>OPERASI STREAM</li>
 <pre>
