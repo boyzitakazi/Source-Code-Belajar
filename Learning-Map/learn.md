@@ -18,9 +18,11 @@
     <li>character</li>
     <ul>
       <li>char</li>
-      <li>conditions</li>
-      <li>bool (true & false)</li>
     </ul>
+    <li>conditions</li>
+    <ul>
+      <li>bool (true & false)</li>
+    </ul
   </ul>
 
   <li> memahami bentuk operator dan cara menggunakanya </li>
