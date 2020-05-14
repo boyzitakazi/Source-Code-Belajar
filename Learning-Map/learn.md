@@ -1,7 +1,7 @@
 <h1>Road Map Belajar C++</h1>
 <img src="https://img.icons8.com/all/500/c-plus-plus-logo.png", width=250px, height=250px />
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg"/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" width=50px, height=50px/>
 
 <ol>
   <li>Memahami <b><i>Printing(output)</i></b> dan <b><i>Masukan(input)</i></b></li>
