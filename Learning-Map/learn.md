@@ -33,4 +33,17 @@
     6. Operator Bitwise ( lib-nya bitset, &, |, ~, ^, <<, >> )
     7. Operator Casting ( merubah jenis tipe data-nya : simbo (tipe datanya))
     8. Operator Comma ( simbol (), cara (expression1, expression2, expression3, ....) )</pre>
+
+<li> memahami control flow dan dapat menjelaskan serta membedakannya </li>
+<pre>
+  - continue
+  - break
+  - pass
+  - percabangan
+    1. if else conditions
+    2. switch case
+  - perulangan
+    1. while
+    2. do while
+    3. for</pre>
 </ol>
