@@ -1,4 +1,5 @@
 <h1>Python Hello World</h1>
+<img src="https://github.com/boyzitakazi/Source-Code-Belajar/blob/master/Python%20Course/python_logo.png"/>
 Assalamu’alaikum warahmatullahi wabarakatuh..
 
 <b>Python</b> adalah salah satu bahasa pemrograman yang sedang naik daun. Kepopulerannya terus meroket sejak tahun 2010. Python menjadi bahasa pemrograman yang mudah untuk dipelajari, termasuk bagi orang-orang yang baru belajar bahasa pemrograman.
