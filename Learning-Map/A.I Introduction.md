@@ -59,13 +59,13 @@ Mechine learning merupakan suatu proses untuk menghasilkan output yang akurat da
 data yang kita gunakan.
 
 Mechine Learning terbagi menjadi 4 tipe :
-*1. Supervised Learning
+* Supervised Learning
    program komputer belajar dari data yang sudah diberi label oleh manusia,
    dengan hasil pemetaan fungsi dari input menjadi output.
    * SL terbagi menjadi 2 :
-     * 1. Classification
+     * Classification
         Pengelompokan menjadi kategori tertentu
-     * 2. Regression
+     * Regression
         Menentukan output yang berbentuk angka.
         Cara perhitungan regression dapat dilakukan dengan :
           * Linear Regression
@@ -73,13 +73,13 @@ Mechine Learning terbagi menjadi 4 tipe :
           * Decision Tree
           * Naive Bayes
         
-*2. Unsupervised Learning
+* Unsupervised Learning
    Program komputer belajar pengelompokan data tanpa pengawasan dari manusia
    
-*3. Semi-supervised Learning
+* Semi-supervised Learning
    Kombinasi dari supervised learning dan Unsupervised learning
    
-*4. Reinforcement Learning
+* Reinforcement Learning
    program komputer belajar sendiri melalui interaksi dengan lingkungan dengan konsep reward/punishment
    contohnya dalam game, dari sini kita mengenal tentang
    * Neural Network
@@ -89,28 +89,28 @@ Mechine Learning terbagi menjadi 4 tipe :
      variasi penerapan Neural Network yang menggunakan lapisan tersenbunyu untuk mengekstrak fitur data
 
 
-MELIHAT A.I DARI SISI BISNIS
-======================================== A.I AS PREDICTIONS MECHINE ================================================
-DAMPAK A.I UNTUK PEKERJAAN
-- A.I dapat mempermudah pekerjaan
-- A.I dapat mengurangi jumlah pekerjaan tertentu
-- A.I bisa mengubah proses yang dibutuhkan dalam pekerjaan
-- A.I bisa mengubah kemampuan manusia yang dibutuhkan dalam pekerjaan tertentu
+# Melihat A.I Dari Sisi Bisnis
+## A.I As Prediction Mechine
+### Dampak A.I Untuk Pekerjaan
+* A.I dapat mempermudah pekerjaan
+* A.I dapat mengurangi jumlah pekerjaan tertentu
+* A.I bisa mengubah proses yang dibutuhkan dalam pekerjaan
+* A.I bisa mengubah kemampuan manusia yang dibutuhkan dalam pekerjaan tertentu
 
-3 FAKTOR A.I DALAM STRATEGI BISNIS
-- ada pertimbangan untuk mengubah model bisnis
-- pertimbangan untuk perubahan dipengaruhi oleh ketidakpastian
-- ada perangkat atau siste A.I yang dapat mengurangi ketidakpastian tersebut secara signifikan
+### 3 Faktor A.I Dalam Strategi Bisnis
+* ada pertimbangan untuk mengubah model bisnis
+* pertimbangan untuk perubahan dipengaruhi oleh ketidakpastian
+* ada perangkat atau siste A.I yang dapat mengurangi ketidakpastian tersebut secara signifikan
 
 PENTING.!!
 ke3 faktor diatas akan menjadi percuma jika anda tidak tau, sebenarnya proses apakah dalam operasional perusahaan
 yang bisa memanfaatkan teknologi A.I
 
 nah untuk itu kita memanfaatkan kerangka kerja yang disebut dengan A.I Canvas
-- A.I CANVAS 
+* A.I CANVAS 
   merupakan suatu format untuk menganalisis suatu penerapan teknologi A.I dalam proses pekerjaan
   atau proses bisnis yang ada dalam sebuah perusahaan atau organisasi
-- A.I CANVAS
+* A.I CANVAS
   merupakan kerangka kerja untuk menganalisis potensi penerapan A.I dalam sebuah kegiatan atau proses bisnis
   
 ----------------------------------------------------------
