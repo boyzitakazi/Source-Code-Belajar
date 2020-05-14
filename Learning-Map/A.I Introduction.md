@@ -59,7 +59,7 @@ Mechine learning merupakan suatu proses untuk menghasilkan output yang akurat da
 data yang kita gunakan.
 
 Mechine Learning terbagi menjadi 4 tipe :
-* 1. Supervised Learning
+*1. Supervised Learning
    program komputer belajar dari data yang sudah diberi label oleh manusia,
    dengan hasil pemetaan fungsi dari input menjadi output.
    * SL terbagi menjadi 2 :
@@ -73,13 +73,13 @@ Mechine Learning terbagi menjadi 4 tipe :
           * Decision Tree
           * Naive Bayes
         
-* 2. Unsupervised Learning
+*2. Unsupervised Learning
    Program komputer belajar pengelompokan data tanpa pengawasan dari manusia
    
-* 3. Semi-supervised Learning
+*3. Semi-supervised Learning
    Kombinasi dari supervised learning dan Unsupervised learning
    
-* 4. Reinforcement Learning
+*4. Reinforcement Learning
    program komputer belajar sendiri melalui interaksi dengan lingkungan dengan konsep reward/punishment
    contohnya dalam game, dari sini kita mengenal tentang
    * Neural Network
