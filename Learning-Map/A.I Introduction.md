@@ -37,10 +37,9 @@ Konsepsi A.I
 inti penting A.I adalah data, semakin banyak data/informasi dari A.I maka semakin akurat outputnya
 
 
-============================================= DATA ======================================================
-INTRO DATA
+### Pentingnya DATA 
 
-"seperti bangunan memiliki banyak bata untuk membuatnya sama halnya A.I butuh data untuk membuatnya"
+> "seperti bangunan memiliki banyak bata untuk membuatnya sama halnya A.I butuh data untuk membuatnya"
 
 Penting.!
 teknologi A.I berbasis mechine learning ini akan terbangun jika data sudah terlihat, data seperti apa untuk A.I.?
@@ -48,48 +47,46 @@ jawabanya data yang berkualitas dan sudah diber label akurat yang dibutuhkan ole
 
 
 Pengenalan :
-- Data merupakan kumpulan, keterangan atau deskriptif dari suatu objek atau kejadian
-- Data terbagi menjadi 2 :
-  - Data terstruktur contohnya dalam database/tabel
-  - Data tidak terstruktur contohnya audio, gambar, teks, video
+* Data merupakan kumpulan, keterangan atau deskriptif dari suatu objek atau kejadian
+* Data terbagi menjadi 2 :
+  * Data terstruktur contohnya dalam database/tabel
+  * Data tidak terstruktur contohnya audio, gambar, teks, video
 
 
-======================================== MECHINE LEARNING FLOW ================================================
-MECHINE LEARNING FLOW
+### Machine Learning Flow
 
-mechine learning merupakan suatu proses untuk menghasilkan output yang akurat dari pengalaman sebelumnya dari
+Mechine learning merupakan suatu proses untuk menghasilkan output yang akurat dari pengalaman sebelumnya dari
 data yang kita gunakan.
 
 Mechine Learning terbagi menjadi 4 tipe :
-1. Supervised Learning
+* 1. Supervised Learning
    program komputer belajar dari data yang sudah diberi label oleh manusia,
    dengan hasil pemetaan fungsi dari input menjadi output.
-   - SL terbagi menjadi 2 :
-     1. Classification
+   * SL terbagi menjadi 2 :
+     * 1. Classification
         Pengelompokan menjadi kategori tertentu
-     2. Regression
+     * 2. Regression
         Menentukan output yang berbentuk angka.
         Cara perhitungan regression dapat dilakukan dengan :
-          - Linear Regression
-          - Logistic Regression
-          - Decision Tree
-          - Naive Bayes
+          * Linear Regression
+          * Logistic Regression
+          * Decision Tree
+          * Naive Bayes
         
-2. Unsupervised Learning
+* 2. Unsupervised Learning
    Program komputer belajar pengelompokan data tanpa pengawasan dari manusia
    
-3. Semi-supervised Learning
+* 3. Semi-supervised Learning
    Kombinasi dari supervised learning dan Unsupervised learning
    
-4. Reinforcement Learning
+* 4. Reinforcement Learning
    program komputer belajar sendiri melalui interaksi dengan lingkungan dengan konsep reward/punishment
    contohnya dalam game, dari sini kita mengenal tentang
-   - Neural Network
+   * Neural Network
      mengenali pola data dengan meniru cara otak manusia bekerja
      
-   - Deep Learning
+   * Deep Learning
      variasi penerapan Neural Network yang menggunakan lapisan tersenbunyu untuk mengekstrak fitur data
-
 
 
 MELIHAT A.I DARI SISI BISNIS
