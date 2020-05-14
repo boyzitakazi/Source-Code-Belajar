@@ -21,7 +21,7 @@ Dapat dibilang kalau filtering dataframe dengan boolean is more human. karena ki
 
 Pada tulisan ini saya akan memberikan beberapa contoh mengakses DataFrame dengan Filtering by Boolean. kita akan menggunakan suatu data tentang kejadian titanic. pertama kita import data kita.
 
-<img src="" alt="day2_week2">
+<img src="https://github.com/boyzitakazi/Source-Code-Belajar/blob/master/Python%20Course/img/df_day_2_week_2.png" alt="day2_week2">
 
 Dari gambar dapat kita lihat bahwa data kita memiliki beberapa column seperti tentang status survived, tentang umur, tentang jenis kelamain, dan lain-lain. misalkan boss kita menyuruh kita untuk melakukan beberapa hal sebagai berikut :
 
@@ -55,7 +55,7 @@ Name: survived, Length: 1309, dtype: bool
 
 Sekarang kita masukan boolean series kita ke dalam dataframe kita.
 
-<img src="" alt="1df_day2_week2">
+<img src="https://github.com/boyzitakazi/Source-Code-Belajar/blob/master/Python%20Course/img/1df_day2_week2.png" alt="1df_day2_week2">
 
 <h3>2. Data laki-laki yang selamat</h3>
 
@@ -90,7 +90,7 @@ Name: sex, Length: 1309, dtype: bool
 print(df[(survived) & (laki2)])
 ```
 
-<img src="" alt="2df_day2_week2">
+<img src="https://github.com/boyzitakazi/Source-Code-Belajar/blob/master/Python%20Course/img/2df_day2_week2.png" alt="2df_day2_week2">
 
 <h3>3. Data Perempuan yang tidak selamat dengan umur lebih dari 40 tahun atau kurang dari 20 tahun.</h3>
 
@@ -115,14 +115,14 @@ kemudian kita gabungkan boolean series ini dengan seperti ini :
 df[(not_survived) & (perempuan) & (lebih_40 | kurang_20)]
 ```
 
-<img src="" alt="3df_day2_week2">
+<img src="https://github.com/boyzitakazi/Source-Code-Belajar/blob/master/Python%20Course/img/3df_day2_week2.png" alt="3df_day2_week2">
 
 <h2>Data Transformation</h2>
 
 Data transformasi adalah mengubah format data kepada suatu format yang kita inginkan. didalam matematika dikenal dengan istilah mapping. dalam melakukan transformasi kita memerlukan terlebih dahulu suatu fungsi yang dapat memetkan bentuk data awal kita menjadi bentuk data akhir yang kita inginkan.
 
-<img src="" alt="data_transform">
-<img src="" alt="data_transform1">
+<img src="https://github.com/boyzitakazi/Source-Code-Belajar/blob/master/Python%20Course/img/data_transform.png" alt="data_transform">
+<img src="https://github.com/boyzitakazi/Source-Code-Belajar/blob/master/Python%20Course/img/data_transform1.png" alt="data_transform1">
 
 Pandas menyediakan berbagai method bawaan untuk melakukan transformasi terhadap data kita, beberapa diantaranya telah diperkenalkan pada hari pertama di minggu ke dua ini. misalnya describe(), method describe ini tidak lain memetakan data mentah kita menjadi suatu data hasil tentang deskriptif statistik.
 
@@ -169,6 +169,8 @@ maka seharusnya apabila kita melakukan transformasi terhadap column age dengan f
 ```sh
 print(df[['age']].apply(minus_minimum))
 ```
+<img src="https://github.com/boyzitakazi/Source-Code-Belajar/blob/master/Python%20Course/img/data_transform2.png" alt="data_transform2"/>
+
 Kalian lihat, hasilnya seperti yang kita harapkan, yaitu semua data dari column age dikurangi nilai minmumnya.
 
 <h2>Video Pembelajaran</h2>
