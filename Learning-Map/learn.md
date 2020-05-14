@@ -22,7 +22,7 @@
     <li>conditions</li>
     <ul>
       <li>bool (true & false)</li>
-    </ul
+    </ul>
   </ul>
 
   <li> memahami bentuk operator dan cara menggunakanya </li>
@@ -48,4 +48,11 @@
     1. while
     2. do while
     3. for</pre>
-</ol>
+
+<li> memahami fungsi increment dan decrement serta dapat menjelaskanya</li>
+<pre>
+  1. pre-increment  (++i)
+  2. post-increment (i++)
+  3. pre-decrement  (--i)
+  4. post-decrement (i--)</pre>
+ </ol>
