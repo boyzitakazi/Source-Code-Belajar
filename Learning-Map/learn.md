@@ -1,8 +1,7 @@
 <h1>Road Map Belajar C++</h1>
 <img src="https://img.icons8.com/all/500/c-plus-plus-logo.png", width=250px, height=250px />
-[![Travis]()]()
-[![Scrutinizer]()]()
-[![Packagist]()]()
+[![Travis](https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg)](https://www.sockang.com/2020/04/kumpulan-script-deface-keren-versi-2.html)
+
 
 <ol>
   <li>Memahami <b><i>Printing(output)</i></b> dan <b><i>Masukan(input)</i></b></li>
