@@ -102,7 +102,7 @@ Ada banyak sekali external library di python. Beberapa external library yang san
 
 Cara untuk menginstall external library ini, yang paling mudah adalah dengan menggunakan package manager. Di python package manager ini bernama ‘pip’, contohnya bila kita ingin menginstsall library numpy, maka kita cukup membuka command prompt lalu ketikan ‘pip install numpy’, seperti contoh berikut :
 
-<img src="https://github.com/boyzitakazi/Source-Code-Belajar/blob/master/Python%20Course/WEEK%201/Day%203/fungction.png"/>
+<img src="https://github.com/boyzitakazi/Source-Code-Belajar/blob/master/Python%20Course%20For%20Data%20Science/WEEK%201/Day%203/fungction.png" alt="fungction"/>
 
 Untuk menggunakan external library di kode python kita, kita terlebih dahulu memanggil library tersebut menggunakan suatu keyword yaitu ‘import’. Berikut adalah contoh memanggil dan menggunakan external library di python :
 
