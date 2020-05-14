@@ -1,8 +1,8 @@
 <h1>Road Map Belajar C++</h1>
 <ol>
-  <li> memahami printing(output) dan masukan(input) </li>
-  <li> memahami variable, inisialisasi dan deklarasi </li>
-  <li> memahami tipe data dan bisa menghitung nilai tipe data beserta kegunaanya </li>
+  <li>memahami printing(output) dan masukan(input)</li>
+  <li>memahami variable, inisialisasi dan deklarasi</li>
+  <li>memahami tipe data dan bisa menghitung nilai tipe data beserta kegunaanya</li>
   <ul>
     <li> bilangan bulat </li>
     <ul>
@@ -55,4 +55,13 @@
   2. post-increment (i++)
   3. pre-decrement  (--i)
   4. post-decrement (i--)</pre>
- </ol>
+
+<li>memahami fungsi dan dapat menjelaskannya beserta dapat membedakannya</li>
+<pre>
+  1. return (fungsi dengan kembalian)
+  2. void (fungsi tanpa nilai kembalian)
+  3. Prototype Fungsi/Deklarasi pada fungsi
+  4. default argument pada fungsi
+  5. overloading function/penimpaan sebuah fungsi
+  6. Recursion Function / fungsi rekursi(fungsi yang mengulang dirinya sendiri)</pre>
+</ol>
