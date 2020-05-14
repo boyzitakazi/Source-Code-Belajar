@@ -18,7 +18,7 @@ data_y = [10, 20, 25, 30, 15, 18, 10]
 ax.plot(data_x, data_y)
 plt.show()
 ```
-<img src="" alt="custom1">
+<img src="https://github.com/boyzitakazi/Source-Code-Belajar/blob/master/Python%20Course%20For%20Data%20Science/img/IMG%20WEEK%203/custom1.png" alt="custom1">
 
 <h2>Marker Data Point</h2>
 
@@ -36,14 +36,14 @@ data_y = [10, 20, 25, 30, 15, 18, 10]
 ax.plot(data_x, data_y, marker='o')
 plt.show()
 ```
-<img src="" alt="custom2">
+<img src="https://github.com/boyzitakazi/Source-Code-Belajar/blob/master/Python%20Course%20For%20Data%20Science/img/IMG%20WEEK%203/custom2.png" alt="custom2">
 
 
 Di atas telah di berikan nilai ‘o’ terhadap arguent marker, ‘o’ artinya bulat, jadi di berikan marker bulat terhadap setiap data poin, sehingga dapat lebih jelas membedakan antara garis penghubung dengan data poin.
 
 Nilai marker tidak hanya ‘o’ berikut opsi nilai untuk memberikan berbagai jenis bentuk marker terhadap data poin.
 
-<img src="" alt="custom3">
+<img src="https://github.com/boyzitakazi/Source-Code-Belajar/blob/master/Python%20Course%20For%20Data%20Science/img/IMG%20WEEK%203/custom3.png" alt="custom3">
 
 <h2>Custom LineStyle</h2>
 
@@ -62,11 +62,11 @@ ax.plot(data_x, data_y, marker='x', linestyle='--')
 plt.show()
 ```
 
-<img src="" alt="custom4">
+<img src="https://github.com/boyzitakazi/Source-Code-Belajar/blob/master/Python%20Course%20For%20Data%20Science/img/IMG%20WEEK%203/custom4.png" alt="custom4">
 
 Di atas di berikan nilai ‘–‘ terhadap argument linestyle, terdapat berbagai opsi untuk memberikan berbagai jenis bentuk terhdap linestyle, yaitu sebagai berikut :
 
-<img src="" alt="custom5">
+<img src="https://github.com/boyzitakazi/Source-Code-Belajar/blob/master/Python%20Course%20For%20Data%20Science/img/IMG%20WEEK%203/custom5.png" alt="custom5">
 
 <h2>Memilih Warna</h2>
 
@@ -86,7 +86,7 @@ data_y = [10, 20, 25, 30, 15, 18, 10]
 ax.plot(data_x, data_y, marker='D', linestyle='dotted', color='#9934FF')
 plt.show()
 ```
-<img src="" alt="custom6">
+<img src="https://github.com/boyzitakazi/Source-Code-Belajar/blob/master/Python%20Course%20For%20Data%20Science/img/IMG%20WEEK%203/custom6.png" alt="custom6">
 
 <h2>Custom Axis Label and Title</h2>
 
@@ -116,7 +116,7 @@ ax.set_title('Title of Graph')
 
 plt.show()
 ```
-<img src="" alt="custom7">
+<img src="https://github.com/boyzitakazi/Source-Code-Belajar/blob/master/Python%20Course%20For%20Data%20Science/img/IMG%20WEEK%203/custom7.png" alt="custom7">
 
 <h2>Video Pembelajaran</h2>
 <ul>

@@ -36,7 +36,7 @@ plt.plot(x, y)
 plt.show()
 ```
 
-<img src="" alt="matplotlib1">
+<img src="https://github.com/boyzitakazi/Source-Code-Belajar/blob/master/Python%20Course%20For%20Data%20Science/img/IMG%20WEEK%203/matplotlib1.png" alt="matplotlib1">
 
 Ok, sampai sini setidaknya kalian mempunyai gambaran besar tentang objek visual data. Kita akan lanjut bahas tentang komponen terbesar dalam objek visual ini.
 
@@ -67,7 +67,7 @@ ax = fig.add_subplot()
 plt.show()
 ```
 
-<img src="" alt="matplotlib2">
+<img src="https://github.com/boyzitakazi/Source-Code-Belajar/blob/master/Python%20Course%20For%20Data%20Science/img/IMG%20WEEK%203/matplotlib2.png" alt="matplotlib2">
 
 Sekarang kita akan tambahkan data kedalam objek tersebut dengan memanggil method plot() dan memberikan data sebagai argument method tersebut :
 
@@ -89,7 +89,7 @@ ax.plot(data_x, data_y)
 plt.show()
 ```
 
-<img src="" alt="matplotlib3">
+<img src="https://github.com/boyzitakazi/Source-Code-Belajar/blob/master/Python%20Course%20For%20Data%20Science/img/IMG%20WEEK%203/matplotlib3.png" alt="matplotlib3">
 
 Begitulah cara sederhana untuk membuat objek visualisasi, sekarang akan di tunjukan cara lain yang lebih clean.
 ```sh
@@ -99,7 +99,7 @@ plt.plot(data_x, data_y)
 plt.show()
 ```
 
-<img src="" alt="matplotlib4">
+<img src="https://github.com/boyzitakazi/Source-Code-Belajar/blob/master/Python%20Course%20For%20Data%20Science/img/IMG%20WEEK%203/matplotlib4.png" alt="matplotlib4">
 
 Perhatikan, kedua cara tadi menghasilkan hasil yang sama. tapi cara kedua lebih clean karena tidak memerlukan banyak kode. sebenarnya ke dua cara tersebut sama-sama menghasilkan komponen Figure dan Axis. tetapi cara pertama Explicit sedangkan cara kedua Implicit.
 
@@ -121,7 +121,7 @@ ax.plot(data_x, data_y)
 plt.show()
 ```
 
-<img src="" alt="matplotlib5">
+<img src="https://github.com/boyzitakazi/Source-Code-Belajar/blob/master/Python%20Course%20For%20Data%20Science/img/IMG%20WEEK%203/matplotlib5.png" alt="matplotlib5">
 
 Memungkinkan untuk memplot lebih dari satu data kedalam suatu axis dengan cara seperti ini :
 ```sh
@@ -135,7 +135,7 @@ ax.plot(data_x2, data_y2)
 plt.show()
 ```
 
-<img src="" alt="matplotlib6">
+<img src="https://github.com/boyzitakazi/Source-Code-Belajar/blob/master/Python%20Course%20For%20Data%20Science/img/IMG%20WEEK%203/matplotlib6.png" alt="matplotlib6">
 
 <h2>Video Belajar</h2>
 <ul>
