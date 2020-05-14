@@ -1,4 +1,4 @@
-MELIHAT A.I DARI SISI TEKNIS
+##MELIHAT A.I DARI SISI TEKNIS
 =============================================== INTRO ================================================
 WHAT IS ARTIFICIAL INTELLIGENCES.?
 
