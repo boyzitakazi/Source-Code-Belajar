@@ -1,8 +1,8 @@
 <h1>Road Map Belajar C++</h1>
 <ol>
-  <b><li>Memahami Printing(output) Dan Masukan(input)</li>
-  <li>memahami variable, inisialisasi dan deklarasi</li>
-  <li>memahami tipe data dan bisa menghitung nilai tipe data beserta kegunaanya</li></b>
+  <li>Memahami <b><i>Printing(output)</i></b> dan <b><i>Masukan(input)</i></b></li>
+  <li>Memahami <b><i>Variable, Inisialisasi</i></b> dan <b><i>Deklarasi</i></b></li>
+  <li>Memahami Tipe Data dan bisa Menghitung Nilai Tipe Data Beserta Kegunaanya</li>
   <ul>
     <li> bilangan bulat </li>
     <ul>
