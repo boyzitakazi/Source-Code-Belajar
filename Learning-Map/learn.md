@@ -24,7 +24,7 @@
   </ul>
 
 <li>memahami bentuk operator dan cara menggunakanya</li>
-  </pre>
+  <pre>
   1. Operator Aritmatika ( *, +, -, /, % )
   2. Operator Komparasi/perbandingan ( <, >, !=, ==, <=, >= )
   3. Operator Logika (&&, ||, !)
