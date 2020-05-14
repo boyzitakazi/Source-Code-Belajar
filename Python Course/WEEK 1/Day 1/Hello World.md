@@ -1,5 +1,3 @@
-<img src="https://github.com/boyzitakazi/Source-Code-Belajar/blob/master/Python%20Course/python_logo.png"/>
-
 <h1>Python Hello World</h1>
 Assalamu’alaikum warahmatullahi wabarakatuh..
 
