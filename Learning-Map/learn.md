@@ -1,5 +1,5 @@
 <h1>Road Map Belajar C++</h1>
-<img src="https://images7.alphacoders.com/486/486291.jpg", width=100px, height=100px />
+<img src="https://img.icons8.com/all/500/c-plus-plus-logo.png" />
 <ol>
   <li>Memahami <b><i>Printing(output)</i></b> dan <b><i>Masukan(input)</i></b></li>
   <li>Memahami <b><i>Variable, Inisialisasi</i></b> dan <b><i>Deklarasi</i></b></li>
