@@ -12,7 +12,7 @@ True
 
 Daripada memasukan nilai boolean (True or False) langsung kepada variable, lebih baik mendapatkan nilai dengan melakukan suatu operasi. Operasi itu dinamakan comparison operator. Comparison operator ini yang nantinya akan memberikan jawaban nilai berdasarkan logic yang kita bangun. Ada beberapa dasar comparison operator, yaitu sebagai berikut :
 
-<img src="https://github.com/boyzitakazi/Source-Code-Belajar/blob/master/Python%20Course/WEEK%201/Day%204/comparasion.png" />
+<img src="https://github.com/boyzitakazi/Source-Code-Belajar/blob/master/Python%20Course%20For%20Data%20Science/WEEK%201/Day%204/comparasion.png" alt="comparasion" />
 
 ```sh
 def can_run_for_president(age):
