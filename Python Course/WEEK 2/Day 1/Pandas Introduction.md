@@ -128,16 +128,16 @@ Pandas memiliki beberapa method untuk memahami gambaran besar karakteristik dari
 
 Metode head() adalah secara default adalah untuk melihat 5 pertama data kita, sedangkan metode tail() secara default untuk melihat 5 data kita dari terakhir. kita bisa mengganti jumlah data yang akan di tampilkan dengan memberikan data integer sebagai argument terhadap metode tersebut. contohnya sebagai beriktu :
 
-<img src="" alt="https://github.com/boyzitakazi/Source-Code-Belajar/blob/master/Python%20Course/img/0head.png">
-<img src="" alt="https://github.com/boyzitakazi/Source-Code-Belajar/blob/master/Python%20Course/img/1tail.png">
+<img src="https://github.com/boyzitakazi/Source-Code-Belajar/blob/master/Python%20Course/img/0head.png" alt="head()">
+<img src="https://github.com/boyzitakazi/Source-Code-Belajar/blob/master/Python%20Course/img/1tail.png" alt="tail()">
 
 info() adalah suatu method untuk melakukan summary terhadap data yang memberikan informasi tentang tipe dari index data, tipe dari column data, non-null values pada setiap column dan jumlah memory yang digunakan. berikut adalah contohnya :
 
-<img src="" alt="https://github.com/boyzitakazi/Source-Code-Belajar/blob/master/Python%20Course/img/2info.png">
+<img src="https://github.com/boyzitakazi/Source-Code-Belajar/blob/master/Python%20Course/img/2info.png" alt="info()">
 
 descirbe() adalah sutau metode yang menghasilkan kesimpulan deskriptif statistik dari data. kesimpulan deskriptif statistik yang dihasilkan adalah seperti central tendency, dispersi dan bentuk distributsi dari data. untuk mengetahui lebih dalam tentang deskriptik statistik silahkan baca artikel ini. berikut contoh penggunaan metode ini.
 
-<img src="" alt="https://github.com/boyzitakazi/Source-Code-Belajar/blob/master/Python%20Course/img/3describe.png">
+<img src="https://github.com/boyzitakazi/Source-Code-Belajar/blob/master/Python%20Course/img/3describe.png" alt="describe()">
 
 <h2>Video Pembelajaran</h2>
 <ul>
