@@ -1,4 +1,4 @@
 # Source-Code-Belajar
-[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
+[![N|Solid](https://cdn.freebiesupply.com/logos/thumbs/2x/python-3-logo.png)](https://nodesource.com/products/nsolid)
 
 <b>Resource : </b> Kelas Terbuka..
