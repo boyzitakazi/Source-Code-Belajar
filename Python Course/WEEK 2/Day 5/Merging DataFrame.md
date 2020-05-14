@@ -43,7 +43,7 @@ df3 = pd.DataFrame({'A': ['A8', 'A9', 'A10', 'A11'],
                           index=[8, 9, 10, 11])
 ```
 
-<img src="https://github.com/boyzitakazi/Source-Code-Belajar/blob/master/Python%20Course/img/merging_data1.jpg" alt="merging_data1">
+<img src="https://github.com/boyzitakazi/Source-Code-Belajar/blob/master/Python%20Course/img/merging_data1.png" alt="merging_data1">
 
 Perhatikan, data yang kita punya sangatlah simple, kita mempunyai 3 data yang mempunyai nama column yang sama. apabila kita ingin menggabungkan baris data ini, kita bisa menggunakan suatu method concat(). pertama kita buat terlebih dahulu list dari data yang akan kita gabung, kemudian masukan list tersebut sebagai argument kedalam method concat(). seperti ini.
 
@@ -70,7 +70,7 @@ pd.concat(list_dataframe)
 
 Berikut hasilnya, hasil tersebut merupakan gabungan yang seperti ini :
 
-<img src="https://github.com/boyzitakazi/Source-Code-Belajar/blob/master/Python%20Course/img/merging_data2.jpg" alt="merging_data2">
+<img src="https://github.com/boyzitakazi/Source-Code-Belajar/blob/master/Python%20Course/img/merging_data2.png" alt="merging_data2">
 
 Apabila kita ingin menggabungkan data tersebut berdasarkan column, kita mesti memberikan satu argument lagi kedalam method concat yaitu axis, dengan nilai 1. seperti ini
 ```sh
@@ -96,7 +96,7 @@ Coba kalian perhatikan, penggabungan ini adalah penggabungan sumbu column pada s
 <h2>Logika-Logika Penggabungan Dengan Metode merge</h2>
 <h3>Full Outer Join</h3>
 
-<img src="https://github.com/boyzitakazi/Source-Code-Belajar/blob/master/Python%20Course/img/merging_data3.jpg" alt="merging_data3">
+<img src="https://github.com/boyzitakazi/Source-Code-Belajar/blob/master/Python%20Course/img/merging_data3.png" alt="merging_data3">
 
 <ul>
     <li>Full Outer Join menghasilkan gabungan index bari dari setiap data yang di gabung.</li>
@@ -161,7 +161,7 @@ pd.merge(left, right, on='key', how='outer')
 
 <h3>Inner Join</h3>
 
-<img src="https://github.com/boyzitakazi/Source-Code-Belajar/blob/master/Python%20Course/img/merging_data4.jpg" alt="merging_data4">
+<img src="https://github.com/boyzitakazi/Source-Code-Belajar/blob/master/Python%20Course/img/merging_data4.png" alt="merging_data4">
 
 Inner join ini akan menggabungkan data antara nilai key/referensi yang beririsan.
 
@@ -179,7 +179,7 @@ Coba perhatikan, bahwa data yang di gabungkan adalah data yang mempunyai nilai k
 
 <h3>Left Join</h3>
 
-<img src="https://github.com/boyzitakazi/Source-Code-Belajar/blob/master/Python%20Course/img/merging_data5.jpg" alt="merging_data5">
+<img src="https://github.com/boyzitakazi/Source-Code-Belajar/blob/master/Python%20Course/img/merging_data5.png" alt="merging_data5">
 
 Left Outer Join menghasilkan seluruh data dari data yang kiri ditambah data kanan yang memiliki nilai key yang sama dengan data dari kiri.
 
