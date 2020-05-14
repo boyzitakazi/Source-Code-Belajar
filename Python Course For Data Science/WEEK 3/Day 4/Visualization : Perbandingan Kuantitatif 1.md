@@ -12,7 +12,7 @@ Langsung saja. beberapa bentuk visualisasi yang akan di perkenalkan adalah :
 
 Akan di gunakan data tentang penjualan video games dalam satuan juta dollar, yang mana filenya bisa di download disini.
 
-unduh data : vgsales.csv
+<b>unduh data :</b> <a href="https://github.com/boyzitakazi/Source-Code-Belajar/blob/master/Python%20Course%20For%20Data%20Science/WEEK%203/Day%204/vgsales.csv">vgsales.csv</a>
 
 Datanya sebagai berikut :
 ```sh
