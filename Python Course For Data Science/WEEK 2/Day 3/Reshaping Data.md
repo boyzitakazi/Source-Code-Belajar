@@ -6,7 +6,7 @@ Ada beberapa teknik reshaping data di pandas, beberapa diantaranya yang akan dij
 
 <h2>Pivoting Data</h2>
 
-<img src="https://github.com/boyzitakazi/Source-Code-Belajar/blob/master/Python%20Course/img/pivot_data.png" alt="pivot_data">
+<img src="https://github.com/boyzitakazi/Source-Code-Belajar/blob/master/Python%20Course%20For%20Data%20Science/img/pivot_data.png" alt="pivot_data">
 
 Pivoting adalah suatu pengubahan bentuk data dengan memutar data yang terletak di baris menjadi di column. coba perhatikan gambar di atas.
 
@@ -59,7 +59,7 @@ two 	4 	5 	6
 
 <h2>Melting Data</h2>
 
-<img src="https://github.com/boyzitakazi/Source-Code-Belajar/blob/master/Python%20Course/img/melting_data.png" alt="melting_data">
+<img src="https://github.com/boyzitakazi/Source-Code-Belajar/blob/master/Python%20Course%20For%20Data%20Science/img/melting_data.png" alt="melting_data">
 
 Melting adalah ‘unpivoting’, melting mengubah suatu data dengan memutar dari yang tadinya berada di posisi column menjadi di posisi row.
 
