@@ -3,30 +3,30 @@
 <ol>
   <li>Memahami <b><i>Printing(output)</i></b> dan <b><i>Masukan(input)</i></b></li>
   <li>Memahami <b><i>Variable, Inisialisasi</i></b> dan <b><i>Deklarasi</i></b></li>
-  <li>Memahami Tipe Data dan bisa Menghitung Nilai Tipe Data Beserta Kegunaanya</li>
+  <li>Memahami <b><i>Tipe Data</i></b> dan bisa Menghitung Nilai Tipe Data Beserta Kegunaanya</li>
   <ul>
-    <li> bilangan bulat </li>
+    <li> Bilangan Bulat </li>
     <ul>
       <li>short</li>
       <li>int</li>
       <li>long</li>
     </ul>
-    <li> bilangan desimal </li>
+    <li> Bilangan Desimal </li>
     <ul>
       <li>float</li>
       <li>double</li>
     </ul>
-    <li>character</li>
+    <li> Character </li>
     <ul>
       <li>char</li>
     </ul>
-    <li>conditions</li>
+    <li> Conditions </li>
     <ul>
       <li>bool (true & false)</li>
     </ul>
   </ul>
 
-  <li> memahami bentuk operator dan cara menggunakanya </li>
+  <li> Memahami Bentuk <b><i>Operator</i></b> dan cara menggunakanya </li>
     <pre>
     1. Operator Aritmatika ( *, +, -, /, % )
     2. Operator Komparasi/perbandingan ( <, >, !=, ==, <=, >= )
@@ -37,7 +37,7 @@
     7. Operator Casting ( merubah jenis tipe data-nya : simbo (tipe datanya))
     8. Operator Comma ( simbol (), cara (expression1, expression2, expression3, ....) )</pre>
 
-<li> memahami control flow dan dapat menjelaskan serta membedakannya </li>
+<li> Memahami <b><i>Control Flow</i></b> dan Dapat Menjelaskan Serta Membedakannya </li>
 <pre>
   - continue
   - break
@@ -50,14 +50,14 @@
     2. do while
     3. for</pre>
 
-<li> memahami fungsi increment dan decrement serta dapat menjelaskanya</li>
+<li> Memahami Fungsi <b><i>Increment</i></b> Dan <b><i>Decrement</i></b> Serta Dapat Menjelaskanya</li>
 <pre>
   1. pre-increment  (++i)
   2. post-increment (i++)
   3. pre-decrement  (--i)
   4. post-decrement (i--)</pre>
 
-<li>memahami fungsi dan dapat menjelaskannya beserta dapat membedakannya</li>
+<li> Memahami <b><i>Fungsi</i></b> Dan Dapat Menjelaskannya Beserta Dapat Membedakannya</li>
 <pre>
   1. return (fungsi dengan kembalian)
   2. void (fungsi tanpa nilai kembalian)
@@ -66,18 +66,18 @@
   5. overloading function/penimpaan sebuah fungsi
   6. Recursion Function / fungsi rekursi(fungsi yang mengulang dirinya sendiri)</pre>
 
-<li> memahami scoping pada C++ </li>
+<li> Memahami <b><i>Scoping</i></b> Pada C++ </li>
 <pre>
   1. global scope
   2. local scope
   3. block scope</pre>
  
-<li> Memory Management </li>
+<li> <b>Memory</b> Management </li>
 <pre>
   1. Pointer ( pemberi alamat pada suatu variabel )
   2. Reference ( mengacu pada suatu variabel sehingga nilai dan alamatnya sama )</pre>
 
-<li> Memahami dan dapat menjelaskan Data type Non-Primitive </li>
+<li> Memahami Dan Dapat Menjelaskan <b><i>Tipe Data Non-Primitive</i></b> </li>
 <pre>
   - Array
     - Multidimensi array
@@ -99,7 +99,7 @@
   - Union  (tipe data yang dimana 1 data memiliki banyak komponen/element-element, 
             dan saling berhubungan jika salah satu data diubah maka yang lainnya akan berubah)</pre>
             
-<li>OPERASI STREAM</li>
+<li><b>Operasi</b> Stream</li>
 <pre>
   - fstream (file stream)
     - ifstream (mengambil)
