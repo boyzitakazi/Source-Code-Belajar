@@ -1,14 +1,13 @@
 ## MELIHAT A.I DARI SISI TEKNIS
-=============================================== INTRO ================================================
-WHAT IS ARTIFICIAL INTELLIGENCES.?
+### WHAT IS ARTIFICIAL INTELLIGENCES.?
 
 A.I merupakan suatu simulasi kecerdasar buatan untuk mengerjakan suatu permasalahan secara efektif,
 A.I meliputi proses program yang
-  - Reasoning
+  > Reasoning
     (kemampuan mesin untuk menggunakan data atau informasi agar menampilkan output yang tepat)
-  - Planning
+  > Planning
     (proses pengambilan keputusan yang tepat atau logis)
-  - Learning & Self Corrections
+  > Learning & Self Corrections
     (kemampuan mesin untuk memperbaiki pengambilan keputusan dan menambah pengetahuan dengan melakukan observasi sekitar)
     
 Penting.!
