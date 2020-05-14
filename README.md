@@ -1,3 +1,4 @@
 # Source-Code-Belajar
+## Tutorial Terkait :
 
-<b>Resource : </b> Kelas Terbuka..
+<img src="https://github.com/boyzitakazi/Source-Code-Belajar/blob/master/Python%20Course/python_logo.png" />
