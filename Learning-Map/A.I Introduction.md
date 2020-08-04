@@ -323,6 +323,42 @@ NLP (Natural Language Processing) ada 6 Kategori AI tools diantaranya
    - AWS
    - Google Cloud yang dimana server langsung digunakan untuk prediction pada server
 
+<br />
+#Deklarasi Variabel Javascript
+##variabel dan hoisting
+<p>penggunaan var dalam mendeklarasikan sebuah variabel dalam js
+dapat menimbulkan proses hoisting yaitu pengangkatan variabel dalam function</p>
+
+<p><i><b>cotoh penggunaan var dalam mendeklarasikan variabel</b></i></p>
+```sh
+function getFood(){
+    food = "pizza";
+    console.log(food);
+    var food;
+}
+```
+
+
+<p>gunakan let dan const saat mendeklarasikan variabel
+karena dapat menghindari proses hoisting karena
+poses ini berlaku dalam blok</p>
+
+<p><i><b>contoh penggunaan let dan const dalam mendeklarasikan variabel</b></i></p>
+```sh
+function getDrinks(){
+    let drink = "cocacola";
+    console.log(drink);
+}
+
+function getDrinks(){
+    const drink = "cocacola";
+    console.log(drink); // nilainya tidak dapat diinisialisasi kembali ketika menggunakan const
+}
+```
+
+<p><i><b>dan const bukan berarti nilai constant tetapi valuenya yang constant,
+karena nilai const bisa kita rubah ketika menggunakan array dan object, const tidak
+bisa merubah tipe data yang primitive</b></i></p>
 
 
 
