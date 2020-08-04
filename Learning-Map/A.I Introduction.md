@@ -331,13 +331,13 @@ NLP (Natural Language Processing) ada 6 Kategori AI tools diantaranya
 dapat menimbulkan proses hoisting yaitu pengangkatan variabel dalam function</p>
 
 <p><i><b>cotoh penggunaan var dalam mendeklarasikan variabel</b></i></p>
-'''sh
+```sh
 function getFood(){
     food = "pizza";
     console.log(food);
     var food;
 }
-'''
+```
 
 
 <p>gunakan let dan const saat mendeklarasikan variabel
