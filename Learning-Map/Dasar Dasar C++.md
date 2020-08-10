@@ -5,6 +5,7 @@
   <li>Memahami <b><i>Printing(output)</i></b> dan <b><i>Masukan(input)</i></b></li>
   <li>Memahami <b><i>Variable, Inisialisasi</i></b> dan <b><i>Deklarasi</i></b></li>
   <li>Memahami <b><i>Tipe Data</i></b> dan bisa Menghitung Nilai Tipe Data Beserta Kegunaanya</li>
+  <pre>
   <ul>
     <li> Bilangan Bulat </li>
     <ul>
@@ -26,6 +27,7 @@
       <li>bool (true & false)</li>
     </ul>
   </ul>
+  </pre>
 
   <li> Memahami Bentuk <b><i>Operator</i></b> dan cara menggunakanya </li>
     <pre>
