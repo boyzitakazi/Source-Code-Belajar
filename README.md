@@ -24,7 +24,5 @@ Path belajar adalah dokumentasi hal yang pernah saya pelajari..
 [<img align="left" alt="redhat" width="26px" src="https://github.com/boyzitakazi/Source-Code-Belajar/blob/master/Img%20Optional/redhat.png" />]()
 [<img align="left" alt="ubuntu" width="26px" src="https://github.com/boyzitakazi/Source-Code-Belajar/blob/master/Img%20Optional/ubuntu.png" />]()
 [<img align="left" alt="R" width="26px" src="https://github.com/boyzitakazi/Source-Code-Belajar/blob/master/Img%20Optional/Rlogo.png" />]()
-[<img align="left" alt="java" width="26px" src="https://github.com/boyzitakazi/Source-Code-Belajar/blob/master/Img%20Optional/java.png" />]()
-
 
 <br />
