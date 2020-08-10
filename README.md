@@ -20,5 +20,11 @@ Path belajar adalah dokumentasi hal yang pernah saya pelajari..
 [<img align="left" alt="Terminal" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/terminal/terminal.png" />]()
 [<img align="left" alt="CPP" width="26px" src="https://github.com/boyzitakazi/Source-Code-Belajar/blob/master/Img%20Optional/cpp-96px.png" />]()
 [<img align="left" alt="django" width="26px" src="https://github.com/simple-icons/simple-icons/blob/develop/icons/django.svg" />]()
+[<img align="left" alt="wordpress" width="26px" src="https://github.com/boyzitakazi/Source-Code-Belajar/blob/master/Img%20Optional/wordpress.png" />]()
+[<img align="left" alt="redhat" width="26px" src="https://github.com/boyzitakazi/Source-Code-Belajar/blob/master/Img%20Optional/redhat.png" />]()
+[<img align="left" alt="ubuntu" width="26px" src="https://github.com/boyzitakazi/Source-Code-Belajar/blob/master/Img%20Optional/ubuntu.png" />]()
+[<img align="left" alt="R" width="26px" src="https://github.com/boyzitakazi/Source-Code-Belajar/blob/master/Img%20Optional/Rlogo.png" />]()
+[<img align="left" alt="java" width="26px" src="https://github.com/boyzitakazi/Source-Code-Belajar/blob/master/Img%20Optional/java.png" />]()
+
 
 <br />
